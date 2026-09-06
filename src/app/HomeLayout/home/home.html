@@ -1,12 +1,12 @@
-<div class="container">
+<!-- <div class="container">
  
   <app-menu></app-menu>
-  <div class="dashboard-layout">
+  <div class="home-layout">
     <aside>
       <app-navbar></app-navbar>
     </aside>
    
-    <main class="dashboard-content">
+    <main class="home-content">
       <section class="page-header">
 
         <div class="welcome">
@@ -41,4 +41,46 @@
     </main>
 
   </div>
-</div>
+</div> -->
+
+
+
+<section class="page-header">
+
+  <div class="welcome">
+    <h1>{{ pseudoData.welcome.title }}</h1>
+    <p>{{ pseudoData.welcome.subtitle }}</p>
+  </div>
+
+  <div class="date-time">
+    {{ currentDateTime.toLocaleDateString('en-IN', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    }) }}
+    |
+    {{ currentDateTime.toLocaleTimeString('en-IN') }}
+  </div>
+
+</section>
+
+<app-statistics></app-statistics>
+
+<section class="middle-section">
+
+  <app-employee-distribution></app-employee-distribution>
+
+  <app-recent-employees></app-recent-employees>
+
+</section>
+
+<section class="bottom-section">
+
+  <app-attendance></app-attendance>
+
+  <app-birthdays></app-birthdays>
+
+  <app-quick-actions></app-quick-actions>
+
+</section>

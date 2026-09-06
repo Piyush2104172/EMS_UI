@@ -41,7 +41,7 @@ export class Login {
         this.showWarning=true;
         this.warning='incorrect password';
       }else{
-         this.router.navigate(['/dashboard']);
+         this.router.navigate(['/home']);
       this.showWarning = false;
       sessionStorage.setItem('isLoggedIn','true');
     }

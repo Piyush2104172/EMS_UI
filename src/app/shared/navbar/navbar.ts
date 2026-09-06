@@ -14,7 +14,7 @@ export class Navbar {
     constructor(private router: Router){}
 
    menuItems = [
-    { label: 'Dashboard', icon: 'home' },
+    { label: 'Home', icon: 'home' },
     { label: 'Employees', icon: 'people' },
     { label: 'Departments', icon: 'business' },
     { label: 'Attendance', icon: 'event_available' },
