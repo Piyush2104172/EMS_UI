@@ -26,7 +26,7 @@ menu {
   padding: 0 20px;
   box-sizing: border-box;
   border: none;
- border-radius: 0 7px 7px 0;
+  border-radius: 0 7px 7px 0;
   background: transparent;
   color: #c5d5e8;
   font-family: inherit;
@@ -52,17 +52,16 @@ menu {
   color: white;
 }
 
-.menu-item:first-child {
+.menu-item.active {
   background: linear-gradient(90deg, #16559a, #1d4e82);
   color: white;
   border-left: 4px solid #58baff;
   box-shadow: 0 4px 12px rgba(0, 90, 180, 0.25);
 }
 
-.menu-item:first-child mat-icon {
+.menu-item.active mat-icon {
   color: white;
 }
-
 .navbar-bottom {
   margin-top: auto;
 }

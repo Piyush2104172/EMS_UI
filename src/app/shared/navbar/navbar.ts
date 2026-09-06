@@ -1,31 +1,35 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
-  imports: [MatIconModule],
+  imports: [MatIconModule,RouterLink, RouterLinkActive],
   selector: 'app-navbar',
   styleUrl: './navbar.css',
   templateUrl: './navbar.html',
 })
 export class Navbar {
+    constructor(public router: Router){}
 
-    constructor(private router: Router){}
-
-   menuItems = [
-    { label: 'Home', icon: 'home' },
-    { label: 'Employees', icon: 'people' },
-    { label: 'Departments', icon: 'business' },
-    { label: 'Attendance', icon: 'event_available' },
-    { label: 'Leave Management', icon: 'description' },
-    { label: 'Payroll', icon: 'credit_card' },
-    { label: 'Reports', icon: 'bar_chart' },
-    { label: 'Settings', icon: 'settings' }
+   
+  menuItems = [
+    { label: 'Home', icon: 'home', path: '/home' },
+    { label: 'Employees', icon: 'people', path: '/employees' },
+    { label: 'Departments', icon: 'business', path: '/departments' },
+    { label: 'Attendance', icon: 'event_available', path: '/attendance' },
+    { label: 'Leave Management', icon: 'description', path: '/leavemanager' },
+    { label: 'Payroll', icon: 'credit_card', path: '/payroll' },
+    { label: 'Reports', icon: 'bar_chart', path: '/reports' },
+    { label: 'Settings', icon: 'settings', path: '/settings' }
   ];
 
+  navigate(path: string) {
+    this.router.navigate([path]);
+  }
+
   logout(){
-   sessionStorage.setItem('isLoggedIn','');
+   sessionStorage.removeItem('isLoggedIn');
    this.router.navigate(['/']);
    alert('Logeed out succesfully');
   }

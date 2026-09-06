@@ -1,6 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import employees from '../../../assests/employees.json';
 
 @Component({
@@ -10,7 +9,12 @@ import employees from '../../../assests/employees.json';
   templateUrl: './recent-employees.html',
 })
 export class RecentEmployees {
-  employees = employees.slice(0,4);
+  employees = employees
+    .sort((a, b) =>
+      new Date(b.joiningDate).getTime() -
+      new Date(a.joiningDate).getTime()
+    )
+    .slice(0, 4);
 
   dataSource = new MatTableDataSource(this.employees);
 

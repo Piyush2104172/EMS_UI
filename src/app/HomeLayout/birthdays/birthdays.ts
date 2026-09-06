@@ -12,12 +12,16 @@ export class Birthdays {
   currentMonth = new Date().getMonth() + 1;
   currentDay = new Date().getDate();
 
-  birthdays = employees.filter((employee) => {
-    const month = Number(employee.dateOfBirth.substring(5, 7));
-    const day = Number(employee.dateOfBirth.substring(8, 10));
+  birthdays = employees
+    .filter((employee) => {
+      const month = Number(employee.dateOfBirth.substring(5, 7));
+      const day = Number(employee.dateOfBirth.substring(8, 10));
 
-    return month === this.currentMonth && day >= this.currentDay;
-  });
+      return month === this.currentMonth && day >= this.currentDay;
+    })
+    .sort(
+      (a, b) => Number(a.dateOfBirth.substring(8, 10)) - Number(b.dateOfBirth.substring(8, 10)),
+    );
 
   displayedBirthdays = this.birthdays.slice(0, 3);
 
