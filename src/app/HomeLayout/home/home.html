@@ -53,14 +53,14 @@
   </div>
 
   <div class="date-time">
-    {{ currentDateTime.toLocaleDateString('en-IN', {
+    {{ currentDateTime().toLocaleDateString('en-IN', {
       weekday: 'long',
       day: 'numeric',
       month: 'long',
       year: 'numeric'
     }) }}
     |
-    {{ currentDateTime.toLocaleTimeString('en-IN') }}
+    {{ currentDateTime().toLocaleTimeString('en-IN') }}
   </div>
 
 </section>

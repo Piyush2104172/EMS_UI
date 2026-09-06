@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Statistics } from '../statistics/statistics';
 import { EmployeeDistribution } from '../employee-distribution/employee-distribution';
 import { RecentEmployees } from '../recent-employees/recent-employees';
@@ -13,7 +13,7 @@ import { QuickActions } from '../quick-actions/quick-actions';
   templateUrl: './home.html',
 })
 export class Home {
-  currentDateTime = new Date();
+  currentDateTime = signal(new Date());
 
   pseudoData = {
     welcome: {
@@ -22,9 +22,10 @@ export class Home {
     },
   };
 
+
   constructor() {
     setInterval(() => {
-      this.currentDateTime = new Date();
+      this.currentDateTime.set(new Date());
     }, 1000);
   }
 }
