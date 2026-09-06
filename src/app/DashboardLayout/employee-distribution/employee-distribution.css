@@ -1,0 +1,124 @@
+.distribution-card {
+  width: 100%;
+  height: 306px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5ebf2;
+  border-radius: 8px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 8px rgba(30, 60, 90, 0.05);
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 12px;
+ font-weight: 600;
+  color: #172238;
+}
+
+
+.distribution-body {
+  width: 100%;
+  height: calc(100% - 30px);
+  display: flex;
+  align-items: center;
+}
+
+.chart-container {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  flex-shrink: 0;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.chart-center {
+ position: absolute;
+  top: 50%;
+ left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.chart-center span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: #172238;
+}
+
+.chart-center small {
+  margin-top: 3px;
+  font-size: 8px;
+  color: #60718a;
+}
+
+
+.legend {
+  flex: 1;
+  margin-left: 18px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 6px;
+  padding-right: 5px;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+.department {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+
+  .chart-container {
+    width: 110px;
+    height: 110px;
+  }
+
+  .legend {
+    margin-left: 12px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .distribution-card {
+    height: auto;
+  }
+
+  .distribution-body {
+    flex-direction: column;
+  }
+
+  .legend {
+    width: 100%;
+    margin: 15px 0 0;
+  }
+
+}

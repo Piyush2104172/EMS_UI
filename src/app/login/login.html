@@ -1,0 +1,17 @@
+<div class="container">
+
+    <h1>EMPLOYEE</h1>
+    <h1>MANAGEMENT SYSTEM</h1>
+    <p>PEOPLE | PROCESS | PROGRESS</p>
+    @if(showWarning){
+    <span class="warning" >{{warning}}</span>
+    }
+    <label>USERNAME</label>
+    <input type="text" #user placeholder="Enter your username">
+
+    <label>PASSWORD</label>
+    <input type="password" #pass placeholder="Enter your password">
+
+    <button class="btn" (click)="verify(user.value,pass.value)">LOGIN</button>
+
+</div>

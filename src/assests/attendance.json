@@ -1,0 +1,124 @@
+{
+  "June": {
+    "week1": {
+      "Mon": { "present": 105, "absent": 20 },
+      "Tue": { "present": 108, "absent": 17 },
+      "Wed": { "present": 110, "absent": 15 },
+      "Thu": { "present": 102, "absent": 23},
+      "Fri": { "present": 107, "absent": 18 }
+    },
+    "week2": {
+      "Mon": { "present": 104, "absent": 21 },
+      "Tue": { "present": 109, "absent": 16 },
+      "Wed": { "present": 112, "absent": 13 },
+      "Thu": { "present": 106, "absent": 19 },
+      "Fri": { "present": 108, "absent": 17 }
+    },
+    "week3": {
+      "Mon": { "present": 110, "absent": 15 },
+      "Tue": { "present": 105, "absent": 20 },
+      "Wed": { "present": 113, "absent": 12 },
+      "Thu": { "present": 109, "absent": 16 },
+      "Fri": { "present": 111, "absent": 14 }
+    },
+    "week4": {
+      "Mon": { "present": 106, "absent": 19 },
+      "Tue": { "present": 111, "absent": 14 },
+      "Wed": { "present": 108, "absent": 17 },
+      "Thu": { "present": 114, "absent": 11 },
+      "Fri": { "present": 110, "absent": 15 }
+    }
+  },
+
+  "July": {
+    "week1": {
+      "Mon": { "present": 112, "absent": 13 },
+      "Tue": { "present": 108, "absent": 17 },
+      "Wed": { "present": 115, "absent": 10 },
+      "Thu": { "present": 110, "absent": 15 },
+      "Fri": { "present": 113, "absent": 12 }
+    },
+    "week2": {
+      "Mon": { "present": 109, "absent": 16 },
+      "Tue": { "present": 114, "absent": 11 },
+      "Wed": { "present": 116, "absent": 9 },
+      "Thu": { "present": 111, "absent": 14 },
+      "Fri": { "present": 115, "absent": 10 }
+    },
+    "week3": {
+      "Mon": { "present": 113, "absent": 12 },
+      "Tue": { "present": 110, "absent": 15 },
+      "Wed": { "present": 117, "absent": 8 },
+      "Thu": { "present": 112, "absent": 13 },
+      "Fri": { "present": 114, "absent": 11 }
+    },
+    "week4": {
+      "Mon": { "present": 111, "absent": 14 },
+      "Tue": { "present": 115, "absent": 10},
+      "Wed": { "present": 113, "absent": 12 },
+      "Thu": { "present": 116, "absent": 9 },
+      "Fri": { "present": 110, "absent": 15 }
+    }
+  },
+
+  "August": {
+    "week1": {
+      "Mon": { "present": 108, "absent": 17 },
+      "Tue": { "present": 113, "absent": 12 },
+      "Wed": { "present": 117, "absent": 8 },
+      "Thu": { "present": 110, "absent": 15 },
+      "Fri": { "present": 114, "absent": 11 }
+    },
+    "week2": {
+      "Mon": { "present": 112, "absent": 13 },
+      "Tue": { "present": 109, "absent": 16 },
+      "Wed": { "present": 115, "absent": 10 },
+      "Thu": { "present": 113, "absent": 12 },
+      "Fri": { "present": 116, "absent":9 }
+    },
+    "week3": {
+      "Mon": { "present": 110, "absent": 15 },
+      "Tue": { "present": 114, "absent": 11 },
+      "Wed": { "present": 118, "absent": 7 },
+      "Thu": { "present": 111, "absent": 14 },
+      "Fri": { "present": 115, "absent": 10 }
+    },
+    "week4": {
+      "Mon": { "present": 114, "absent": 11 },
+      "Tue": { "present": 111, "absent": 14},
+      "Wed": { "present": 116, "absent": 9},
+      "Thu": { "present": 113, "absent": 12 },
+      "Fri": { "present": 117, "absent": 8 }
+    }
+  },
+  "September": {
+  "week1": {
+    "Mon": { "present": 112, "absent": 4 },
+    "Tue": { "present": 115, "absent": 3 },
+    "Wed": { "present": 118, "absent": 2 },
+    "Thu": { "present": 114, "absent": 4 },
+    "Fri": { "present": 116, "absent": 3 }
+  },
+  "week2": {
+    "Mon": { "present": 110, "absent": 5 },
+    "Tue": { "present": 114, "absent": 4 },
+    "Wed": { "present": 117, "absent": 2 },
+    "Thu": { "present": 111, "absent": 6 },
+    "Fri": { "present": 115, "absent": 3 }
+  },
+  "week3": {
+    "Mon": { "present": 113, "absent": 4 },
+    "Tue": { "present": 116, "absent": 2 },
+    "Wed": { "present": 119, "absent": 1 },
+    "Thu": { "present": 114, "absent": 4 },
+    "Fri": { "present": 117, "absent": 2 }
+  },
+  "week4": {
+    "Mon": { "present": 115, "absent": 3 },
+    "Tue": { "present": 112, "absent": 5 },
+    "Wed": { "present": 118, "absent": 2 },
+    "Thu": { "present": 116, "absent": 3 },
+    "Fri": { "present": 119, "absent": 1 }
+  }
+}
+}

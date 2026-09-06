@@ -1,0 +1,43 @@
+<section class="statistics">
+
+  @for (item of statistics; track item.title) {
+
+    <div class="stat-card">
+
+      <div class="stat-icon">
+        <mat-icon>{{ item.icon }}</mat-icon>
+      </div>
+
+      <div class="stat-details">
+
+        <div class="stat-value">
+          {{ item.value }}
+        </div>
+
+        <div class="stat-title">
+          {{ item.title }}
+        </div>
+
+        <div
+          class="stat-change"
+          [class.negative]="item.type === 'negative'">
+
+          <span class="arrow">
+            {{ item.type === 'negative' ? '↓' : '↑' }}
+          </span>
+
+          {{ item.change }}%
+
+          <span class="change-text">
+            {{ item.description }}
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  }
+
+</section>

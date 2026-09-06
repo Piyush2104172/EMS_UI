@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background: radial-gradient(circle at center, #111a50 0%, #050817 45%, #00020a 100%);
+
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+/* LOGIN CONTAINER */
+
+.container {
+  width: 28%;
+  min-height: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+  background: rgba(5, 12, 55, 0.75);
+  border: 1px solid #398cff;
+  border-radius: 28px;
+  box-shadow:0 0 10px #398cff;
+  backdrop-filter: blur(15px);
+  display: grid;
+  align-content: center;
+  text-align: center;
+  margin:2.5% auto;
+}
+
+.container h1 {
+  font-size: 28px;
+  letter-spacing: 1.7;
+  margin-bottom: 8px;
+  color: white;
+  text-shadow:
+    0 0 2px white,
+    0 0 5px #287cff;
+}
+
+.container p {
+  color: #9eb9e8;
+  font-size: 13px;
+  letter-spacing: 4px;
+  margin-bottom: 35px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #dcecff;
+}
+
+input {
+  width: 85%;
+  height: 48px;
+  margin: 0 auto 25px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid #358fff;
+  outline: none;
+  background: rgba(0, 10, 40, 0.75);
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 10px rgba(0, 100, 255, 0.1);
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: #8da5cf;
+}
+
+input:focus {
+  border-color: #73c7ff;
+  box-shadow:
+    0 0 8px #358fff,
+    0 0 20px rgba(53, 143, 255, 0.5);
+  background: rgba(5, 20, 65, 0.9);
+}
+
+.btn {
+  width: 90%;
+  height: 50px;
+  margin: 10px auto 0;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #5ac5ff, #e9f8ff, #5ac5ff);
+  color: #050515;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  cursor: pointer;
+  box-shadow:
+    0 0 5px #4dbbff,
+    0 0 1px rgba(77, 187, 255, 0.5);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 5px #5ac5ff,
+    0 0 10px rgba(90, 197, 255, 0.7);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+
+.warning {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: block;
+}

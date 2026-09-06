@@ -1,0 +1,46 @@
+<div class="distribution-card">
+
+    <h3>Employee Distribution</h3>
+
+    <div class="distribution-body">
+
+        <div class="chart-container">
+            <canvas baseChart [data]="doughnutChartData" [options]="doughnutChartOptions" [plugins]="chartPlugins"
+                type="doughnut">
+            </canvas>
+
+            <div class="chart-center">
+                <span>{{ totalEmployees }}</span>
+                <small>Employees</small>
+            </div>
+
+        </div>
+
+        <div class="legend">
+
+
+            @for (department of departments; track department.name) {
+
+            <div class="legend-item">
+
+                <div class="department">
+
+                    <span class="dot" [style.background-color]="department.color">
+                    </span>
+
+                    <span>{{ department.name }}</span>
+
+                </div>
+
+                <span class="percentage">
+                    {{ department.percentage }}%
+                </span>
+
+            </div>
+
+            }
+
+
+        </div>
+
+    </div>

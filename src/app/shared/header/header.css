@@ -1,0 +1,94 @@
+.ems-header {
+  height: 38px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #031b4e, #062b70, #031a46);
+  color: white;
+  border-bottom: 1px solid #00aaff;
+  box-shadow: 0 2px 8px rgba(0, 150, 255, 0.3);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, rgb(162, 145, 145), #00c8ff);
+}
+
+.divider {
+  width: 1px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 12px;
+}
+
+.brand-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #9fc9ed;
+}
+
+.subtitle::first-letter {
+  color: #00c8ff;
+}
+
+.slogan {
+  
+  font-family: Georgia, serif;
+  font-size: 11px;
+  color: #d9e8f7;
+  white-space: nowrap;
+  animation: moveSlogan 8s linear infinite;
+}
+
+.slogan strong {
+  color: #00c8ff;
+  font-size: 13px;
+  font-style: italic;
+  margin-left: 4px;
+}
+
+@keyframes moveSlogan {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 700px) {
+  .subtitle,
+  .slogan {
+    display: none;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+}

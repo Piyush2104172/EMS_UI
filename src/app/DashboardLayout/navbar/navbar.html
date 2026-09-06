@@ -1,0 +1,20 @@
+<nav class="navbar">
+    <div class="menu">
+        @for (item of menuItems; track item.label) {
+        <button class="menu-item">
+            <mat-icon>{{ item.icon }}</mat-icon>
+            <span>{{ item.label }}</span>
+        </button>
+        }
+    </div>
+
+
+    <div class="navbar-bottom">
+        <div class="divider"></div>
+        <button class="menu-item logout" (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </button>
+    </div>
+
+</nav>

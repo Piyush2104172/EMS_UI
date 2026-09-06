@@ -1,0 +1,47 @@
+<menu class="menu">
+
+  <div class="brand">
+    <mat-icon class="brand-icon">groups</mat-icon>
+    <span class="logo">{{ menuData.logo }}</span>
+    <span class="system-name">{{ menuData.systemName }}
+    </span>
+
+  </div>
+
+
+  <div class="search-box">
+    <input type="text" [placeholder]="menuData.searchPlaceholder">
+    <mat-icon>search</mat-icon>
+  </div>
+
+
+  <div class="right-section">
+    <div class="notification">
+      <mat-icon>notifications_none</mat-icon>
+      <span class="notification-count">{{ menuData.notificationCount }}
+      </span>
+
+    </div>
+
+
+    <div class="separator"></div>
+
+    <div class="admin">
+      <div class="admin-avatar">{{ menuData.admin.initials }}
+      </div>
+
+      <div class="admin-details">
+        <span class="admin-name">{{ menuData.admin.name }}</span>
+        <span class="admin-role">{{ menuData.admin.role }}</span>
+
+      </div>
+
+      <mat-icon class="arrow">
+        keyboard_arrow_down
+      </mat-icon>
+
+    </div>
+
+  </div>
+
+</menu>

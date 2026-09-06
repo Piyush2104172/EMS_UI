@@ -1,0 +1,93 @@
+.recent-card {
+  width: 100%;
+  height:auto;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #e5ebf2;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(30, 60, 90, 0.05);
+  font-family: 'Poppins', sans-serif;
+
+
+}
+.employee-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e3f2fd;
+    color: #1976d2;
+
+    font-size: 9px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+.card-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #191919;
+}
+
+.card-header button {
+  border: none;
+  background: transparent;
+  color: #2196f3;
+  font-family: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-radius: 15px;
+
+}
+
+th {
+  height: 30px;
+  background: #f5f8fc;
+  color: #60718a;
+  font-size: 12px;
+  font-weight: 600;
+}
+.mat-column-name {
+    width: 30%;
+}
+.mat-column-joiningDate {
+    width: 20%;
+}
+
+td {
+  height: 27px;
+  color: #52657d;
+  font-size: 9px;
+  border-bottom: 1px solid #edf1f5;
+  border-radius: 25px;
+}
+
+td:nth-child(2) {
+  color: #172238;
+  font-weight: 500;
+}
+
+tr.mat-mdc-row:hover {
+  background: #f8fbff;
+}

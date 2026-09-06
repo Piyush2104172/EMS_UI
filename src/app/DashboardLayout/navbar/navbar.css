@@ -1,0 +1,82 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 8px 15px;
+  background: linear-gradient(180deg, #14243a, #0c1a2d);
+  border-right: 1px solid #263c58;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-item {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: none;
+ border-radius: 0 7px 7px 0;
+  background: transparent;
+  color: #c5d5e8;
+  font-family: inherit;
+ font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.menu-item mat-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #9bb9dc;
+}
+
+.menu-item:hover {
+  background: rgba(35, 108, 185, 0.2);
+  color: white;
+}
+
+.menu-item:hover mat-icon {
+  color: white;
+}
+
+.menu-item:first-child {
+  background: linear-gradient(90deg, #16559a, #1d4e82);
+  color: white;
+  border-left: 4px solid #58baff;
+  box-shadow: 0 4px 12px rgba(0, 90, 180, 0.25);
+}
+
+.menu-item:first-child mat-icon {
+  color: white;
+}
+
+.navbar-bottom {
+  margin-top: auto;
+}
+
+.divider {
+  height: 1px;
+  background: #55708e;
+  margin: 15px 20px;
+}
+
+.logout {
+  color: #b9cce2;
+}
+
+.logout mat-icon {
+  color: #9fc4ed;
+}

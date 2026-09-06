@@ -1,0 +1,37 @@
+<div class="birthdays">
+
+  <div class="birthday-header">
+    <h3>Upcoming Birthdays</h3>
+
+    @if (birthdays.length > 3) {
+      <button class="view-all">View All</button>
+    }
+  </div>
+
+  <div class="birthday-list">
+
+    @for (employee of displayedBirthdays; track employee.id) {
+
+      <div class="birthday">
+
+        <div class="avatar">
+          {{ employee.name.charAt(0) }}{{ employee.name.split(' ')[1]?.charAt(0) }}
+        </div>
+
+        <div class="details">
+          <strong>{{ employee.name }}</strong>
+          <small>{{ employee.department }}</small>
+        </div>
+
+        <span class="date">
+          {{ employee.dateOfBirth.substring(8, 10) }}
+          {{ getMonth(employee.dateOfBirth) }}
+        </span>
+
+      </div>
+
+    }
+
+  </div>
+
+</div>

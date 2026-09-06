@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard-layout {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 132px);
+  overflow: hidden;
+}
+
+aside {
+  flex: 0 0 182px;
+  height: 100%;
+}
+
+app-navbar {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard-content {
+  flex: 1;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  background: #f5f8fc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.welcome h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #172238;
+}
+
+.welcome p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #60718a;
+}
+
+.date-time {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #52657d;
+  white-space: nowrap;
+}
+
+app-statistics {
+  display: block;
+  width: 100%;
+}
+.middle-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr 0.9fr;
+  gap: 14px;
+  margin-top: 22px;
+}

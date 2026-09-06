@@ -1,0 +1,73 @@
+.quick-actions {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background: white;
+  border: 1px solid #e5ebf2;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 60, 90, 0.05);
+  font-family: 'Poppins', sans-serif;
+}
+
+.quick-header {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+}
+
+.quick-header h3 {
+  margin: 0;
+  font-size: 12px;
+  color: #172238;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 15px;
+  gap: 25px;
+}
+
+.actions button {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.actions mat-icon {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+}
+
+.actions .add {
+  background: #2196f3;
+}
+
+.actions .departments {
+  background: #20b981;
+}
+
+.actions .report {
+  background: #ff9f43;
+}
+
+.actions .attendance {
+  background: #7b4de0;
+}
+
+.actions button:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.95);
+}

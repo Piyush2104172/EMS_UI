@@ -1,0 +1,100 @@
+.statistics {
+  width: 100%;
+  display:flex;
+  grid-template-columns: repeat(1, 4fr);
+  gap: 5%;
+}
+
+
+.stat-card {
+  height: auto;
+  width: 25%;
+  display: flex;
+ align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5ebf2;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 60, 90, 0.05);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #eaf4ff;
+  flex-shrink: 0;
+}
+
+
+.stat-icon mat-icon {
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+  color: #2196f3;
+}
+
+
+.stat-details {
+  margin-left: 13px;
+}
+
+
+.stat-value {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  color: #172238;
+}
+
+
+.stat-title {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #60718a;
+}
+
+
+.stat-change {
+  margin-top: 7px;
+  font-size: 10px;
+  color: #20a66a;
+}
+
+
+.arrow {
+  font-weight: 600;
+}
+
+
+.change-text {
+  margin-left: 4px;
+ color: #8a98a9;
+}
+
+
+.stat-change.negative {
+  color: #ef4444;
+}
+
+
+@media (max-width: 1100px) {
+  .statistics-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  .statistics-container {
+    grid-template-columns: 1fr;
+  }
+
+}

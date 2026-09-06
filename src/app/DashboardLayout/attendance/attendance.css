@@ -1,0 +1,35 @@
+.attendance-card {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #e5ebf2;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30,60,90,.05);
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 11px;
+}
+
+.card-header button {
+  border: 1px solid #e5ebf2;
+  background: white;
+  border-radius: 4px;
+  padding: 3px 8px;
+  color: #52657d;
+  font-size: 8px;
+}
+
+.chart {
+  height: auto;
+}
