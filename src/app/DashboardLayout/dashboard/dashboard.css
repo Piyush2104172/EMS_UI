@@ -77,3 +77,7 @@ app-statistics {
   gap: 14px;
   margin-top: 22px;
 }
+
+app-attendance{
+  height: 100%;
+}
