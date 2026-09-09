@@ -1,0 +1,173 @@
+
+<div class="details-page">
+
+  <div class="breadcrumb">
+
+    <button class="back-btn" (click)="navBack()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <span>Departments</span>
+
+    <mat-icon>chevron_right</mat-icon>
+
+    <strong>{{ department.name }}</strong>
+
+  </div>
+
+
+  <section class="department-header">
+
+    <div class="department-title">
+
+      <div class="department-icon">
+        <mat-icon>{{ department.icon }}</mat-icon>
+      </div>
+
+      <div>
+        <div class="title-row">
+
+          <h1>{{ department.name }}</h1>
+
+          <span class="status">
+            {{ department.status }}
+          </span>
+
+        </div>
+
+        <p>{{ department.description }}</p>
+      </div>
+
+    </div>
+
+
+    <div class="employee-total">
+
+     
+
+      <div>
+        <span>  Total Employees</span>
+        <strong><mat-icon>groups</mat-icon> {{ department.employeeCount }}</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="head-section">
+
+    <div class="section-title">
+
+      <div>
+        <h2>Department Head</h2>
+        <p>Head of the {{ department.name }} department</p>
+      </div>
+
+    </div>
+
+
+    <div class="head-card">
+
+      <div class="head-avatar">
+        {{ department.head.name.charAt(0) }}
+      </div>
+
+
+      <div class="head-main">
+
+        <h3>{{ department.head.name }}</h3>
+
+        <span class="head-designation">
+          {{ department.head.designation }}
+        </span>
+
+      </div>
+
+
+      <div class="head-info">
+
+        <div>
+          <mat-icon>badge</mat-icon>
+          <div>
+            <span>Employee ID</span>
+            <strong>{{ department.head.employeeId }}</strong>
+          </div>
+        </div>
+
+
+        <div>
+          <mat-icon>email</mat-icon>
+          <div>
+            <span>Email</span>
+            <strong>{{ department.head.email }}</strong>
+          </div>
+        </div>
+
+
+        <div>
+          <mat-icon>phone</mat-icon>
+          <div>
+            <span>Phone</span>
+            <strong>{{ department.head.phone }}</strong>
+          </div>
+        </div>
+
+
+        <div>
+          <mat-icon>payments</mat-icon>
+          <div>
+            <span >Salary</span>
+            <strong class="active-text">
+              {{ department.head.salary}}
+            </strong>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="employees-section">
+
+    <div class="employees-header">
+
+      <div>
+        <h2>Employees</h2>
+        <p>All employees working in {{ department.name }}</p>
+      </div>
+
+
+      <div class="search-box">
+
+        <mat-icon>search</mat-icon>
+
+        <input
+          type="text"
+          [(ngModel)]="searchText"
+          placeholder="Search by Employee name , Email-id or Id">
+
+      </div>
+
+    </div>
+
+
+    <div class="employee-grid">
+
+      <ag-grid-angular
+        class="ag-theme-quartz"
+        [rowData]="filteredEmployees"
+        [columnDefs]="columnDefs"
+        [defaultColDef]="defaultColDef"
+       
+        [animateRows]="true">
+      </ag-grid-angular>
+
+    </div>
+
+  </section>
+
+</div>

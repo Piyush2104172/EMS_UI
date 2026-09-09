@@ -10,7 +10,8 @@
     "dateOfBirth": "1998-09-03",
     "salary": 58837,
     "address": "Mumbai, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": true
   },
   {
     "employeeId": 102,
@@ -23,7 +24,8 @@
     "dateOfBirth": "1997-03-21",
     "salary": 58974,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 103,
@@ -36,7 +38,8 @@
     "dateOfBirth": "1996-11-15",
     "salary": 59111,
     "address": "Bengaluru, Karnataka",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": true
   },
   {
     "employeeId": 104,
@@ -49,7 +52,8 @@
     "dateOfBirth": "1999-09-12",
     "salary": 59248,
     "address": "Hyderabad, Telangana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": true
   },
   {
     "employeeId": 105,
@@ -62,7 +66,8 @@
     "dateOfBirth": "1998-05-27",
     "salary": 59385,
     "address": "Pune, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 106,
@@ -75,7 +80,8 @@
     "dateOfBirth": "1995-09-18",
     "salary": 59522,
     "address": "Chennai, Tamil Nadu",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": true
   },
   {
     "employeeId": 107,
@@ -88,7 +94,9 @@
     "dateOfBirth": "1994-12-05",
     "salary": 59659,
     "address": "Kolkata, West Bengal",
-    "status": "Active"
+    "status": "Active",
+    "": "Manager",
+    "isDepartmentHead": true
   },
   {
     "employeeId": 108,
@@ -101,7 +109,8 @@
     "dateOfBirth": "1997-07-19",
     "salary": 59796,
     "address": "Ahmedabad, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 109,
@@ -114,7 +123,8 @@
     "dateOfBirth": "1996-10-24",
     "salary": 59933,
     "address": "Jaipur, Rajasthan",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 110,
@@ -127,7 +137,8 @@
     "dateOfBirth": "1999-04-11",
     "salary": 60070,
     "address": "Lucknow, Uttar Pradesh",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 111,
@@ -140,7 +151,8 @@
     "dateOfBirth": "1998-02-28",
     "salary": 60207,
     "address": "Indore, Madhya Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 112,
@@ -153,7 +165,8 @@
     "dateOfBirth": "1997-09-25",
     "salary": 60344,
     "address": "Surat, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 113,
@@ -166,7 +179,8 @@
     "dateOfBirth": "1992-01-01",
     "salary": 42000,
     "address": "Mumbai, Maharashtra",
-    "status": "Inactive"
+    "status": "Inactive",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 114,
@@ -179,7 +193,8 @@
     "dateOfBirth": "1992-04-07",
     "salary": 43573,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 115,
@@ -192,7 +207,8 @@
     "dateOfBirth": "1992-07-13",
     "salary": 45146,
     "address": "Bengaluru, Karnataka",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 116,
@@ -205,7 +221,8 @@
     "dateOfBirth": "1992-10-18",
     "salary": 46719,
     "address": "Hyderabad, Telangana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 117,
@@ -218,7 +235,8 @@
     "dateOfBirth": "1993-01-23",
     "salary": 48292,
     "address": "Pune, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 118,
@@ -231,20 +249,22 @@
     "dateOfBirth": "1993-04-30",
     "salary": 49865,
     "address": "Chennai, Tamil Nadu",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 119,
     "name": "Vikram Kumar",
     "email": "vikram.kumar119@ems.com",
     "phone": "9876543228",
-    "department": "Admin",
+    "department": "Legal",
     "designation": "Operations Manager",
     "joiningDate": "2021-07-06",
     "dateOfBirth": "1993-08-05",
     "salary": 51438,
     "address": "Kolkata, West Bengal",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": true
   },
   {
     "employeeId": 120,
@@ -257,7 +277,8 @@
     "dateOfBirth": "1993-11-10",
     "salary": 53011,
     "address": "Ahmedabad, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": true
   },
   {
     "employeeId": 121,
@@ -270,7 +291,8 @@
     "dateOfBirth": "1994-02-15",
     "salary": 54584,
     "address": "Jaipur, Rajasthan",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 122,
@@ -283,7 +305,8 @@
     "dateOfBirth": "1994-05-23",
     "salary": 56157,
     "address": "Lucknow, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 123,
@@ -296,7 +319,8 @@
     "dateOfBirth": "1994-08-28",
     "salary": 57730,
     "address": "Indore, Madhya Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 124,
@@ -309,7 +333,8 @@
     "dateOfBirth": "1994-12-03",
     "salary": 59303,
     "address": "Surat, Gujarat",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 125,
@@ -322,7 +347,8 @@
     "dateOfBirth": "1995-03-10",
     "salary": 60876,
     "address": "Noida, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 126,
@@ -335,20 +361,22 @@
     "dateOfBirth": "1995-06-15",
     "salary": 62449,
     "address": "Gurugram, Haryana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 127,
     "name": "Karan Chopra",
     "email": "karan.chopra127@ems.com",
     "phone": "9876543236",
-    "department": "Admin",
+    "department": "Legal",
     "designation": "Accountant",
     "joiningDate": "2022-03-11",
     "dateOfBirth": "1995-09-20",
     "salary": 64022,
     "address": "Nagpur, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 128,
@@ -361,7 +389,8 @@
     "dateOfBirth": "1995-12-26",
     "salary": 65595,
     "address": "Mumbai, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 129,
@@ -374,7 +403,8 @@
     "dateOfBirth": "1996-04-01",
     "salary": 67168,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 130,
@@ -387,7 +417,8 @@
     "dateOfBirth": "1996-07-07",
     "salary": 68741,
     "address": "Bengaluru, Karnataka",
-    "status": "Inactive"
+    "status": "Inactive",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 131,
@@ -400,7 +431,8 @@
     "dateOfBirth": "1996-10-12",
     "salary": 70314,
     "address": "Hyderabad, Telangana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 132,
@@ -413,7 +445,8 @@
     "dateOfBirth": "1997-01-17",
     "salary": 71887,
     "address": "Pune, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 133,
@@ -426,7 +459,8 @@
     "dateOfBirth": "1997-04-24",
     "salary": 73460,
     "address": "Chennai, Tamil Nadu",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 134,
@@ -439,7 +473,8 @@
     "dateOfBirth": "1997-07-30",
     "salary": 75033,
     "address": "Kolkata, West Bengal",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 135,
@@ -452,7 +487,8 @@
     "dateOfBirth": "1997-11-04",
     "salary": 76606,
     "address": "Ahmedabad, Gujarat",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 136,
@@ -465,7 +501,8 @@
     "dateOfBirth": "1998-02-09",
     "salary": 78179,
     "address": "Jaipur, Rajasthan",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 137,
@@ -478,7 +515,8 @@
     "dateOfBirth": "1998-05-17",
     "salary": 79752,
     "address": "Lucknow, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 138,
@@ -491,7 +529,8 @@
     "dateOfBirth": "1998-08-22",
     "salary": 81325,
     "address": "Indore, Madhya Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 139,
@@ -504,7 +543,8 @@
     "dateOfBirth": "1998-11-27",
     "salary": 82898,
     "address": "Surat, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 140,
@@ -517,7 +557,8 @@
     "dateOfBirth": "1999-03-04",
     "salary": 84471,
     "address": "Noida, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 141,
@@ -530,7 +571,8 @@
     "dateOfBirth": "1999-06-09",
     "salary": 86044,
     "address": "Gurugram, Haryana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 142,
@@ -543,20 +585,22 @@
     "dateOfBirth": "1999-09-14",
     "salary": 87617,
     "address": "Nagpur, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": true
   },
   {
     "employeeId": 143,
     "name": "Rahul Joshi",
     "email": "rahul.joshi143@ems.com",
     "phone": "9876543252",
-    "department": "Admin",
+    "department": "Legal",
     "designation": "Operations Manager",
     "joiningDate": "2023-07-20",
     "dateOfBirth": "1999-12-20",
     "salary": 89190,
     "address": "Mumbai, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 144,
@@ -569,7 +613,8 @@
     "dateOfBirth": "2000-03-26",
     "salary": 42763,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 145,
@@ -582,7 +627,8 @@
     "dateOfBirth": "2000-07-01",
     "salary": 44336,
     "address": "Bengaluru, Karnataka",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 146,
@@ -595,7 +641,8 @@
     "dateOfBirth": "2000-10-06",
     "salary": 45909,
     "address": "Hyderabad, Telangana",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 147,
@@ -608,7 +655,8 @@
     "dateOfBirth": "2001-01-11",
     "salary": 47482,
     "address": "Pune, Maharashtra",
-    "status": "Inactive"
+    "status": "Inactive",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 148,
@@ -621,7 +669,8 @@
     "dateOfBirth": "2001-04-18",
     "salary": 49055,
     "address": "Chennai, Tamil Nadu",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 149,
@@ -634,7 +683,8 @@
     "dateOfBirth": "2001-07-24",
     "salary": 50628,
     "address": "Kolkata, West Bengal",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 150,
@@ -647,7 +697,8 @@
     "dateOfBirth": "2001-10-29",
     "salary": 52201,
     "address": "Ahmedabad, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 151,
@@ -660,7 +711,8 @@
     "dateOfBirth": "1992-02-06",
     "salary": 53774,
     "address": "Jaipur, Rajasthan",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 152,
@@ -673,7 +725,8 @@
     "dateOfBirth": "1992-05-13",
     "salary": 55347,
     "address": "Lucknow, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 153,
@@ -686,7 +739,8 @@
     "dateOfBirth": "1992-08-18",
     "salary": 56920,
     "address": "Indore, Madhya Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 154,
@@ -699,7 +753,8 @@
     "dateOfBirth": "1992-11-23",
     "salary": 58493,
     "address": "Surat, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 155,
@@ -712,7 +767,8 @@
     "dateOfBirth": "1993-02-28",
     "salary": 60066,
     "address": "Noida, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 156,
@@ -725,7 +781,8 @@
     "dateOfBirth": "1993-06-05",
     "salary": 61639,
     "address": "Gurugram, Haryana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 157,
@@ -738,7 +795,8 @@
     "dateOfBirth": "1993-09-10",
     "salary": 63212,
     "address": "Nagpur, Maharashtra",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 158,
@@ -751,20 +809,22 @@
     "dateOfBirth": "1993-12-16",
     "salary": 64785,
     "address": "Mumbai, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 159,
     "name": "Aditya Kumar",
     "email": "aditya.kumar159@ems.com",
     "phone": "9876543268",
-    "department": "Admin",
+    "department": "Legal",
     "designation": "Operations Executive",
     "joiningDate": "2024-11-27",
     "dateOfBirth": "1994-03-23",
     "salary": 66358,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 160,
@@ -777,7 +837,8 @@
     "dateOfBirth": "1994-06-28",
     "salary": 67931,
     "address": "Bengaluru, Karnataka",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 161,
@@ -790,7 +851,8 @@
     "dateOfBirth": "1994-10-03",
     "salary": 69504,
     "address": "Hyderabad, Telangana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 162,
@@ -803,7 +865,8 @@
     "dateOfBirth": "1995-01-08",
     "salary": 71077,
     "address": "Pune, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 163,
@@ -816,7 +879,8 @@
     "dateOfBirth": "1995-04-15",
     "salary": 72650,
     "address": "Chennai, Tamil Nadu",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 164,
@@ -829,7 +893,8 @@
     "dateOfBirth": "1995-07-21",
     "salary": 74223,
     "address": "Kolkata, West Bengal",
-    "status": "Inactive"
+    "status": "Inactive",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 165,
@@ -842,7 +907,8 @@
     "dateOfBirth": "1995-10-26",
     "salary": 75796,
     "address": "Ahmedabad, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 166,
@@ -855,20 +921,22 @@
     "dateOfBirth": "1996-01-31",
     "salary": 77369,
     "address": "Jaipur, Rajasthan",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 167,
     "name": "Yash Chopra",
     "email": "yash.chopra167@ems.com",
     "phone": "9876543276",
-    "department": "Admin",
+    "department": "Legal",
     "designation": "Operations Manager",
     "joiningDate": "2025-08-02",
     "dateOfBirth": "1996-05-07",
     "salary": 78942,
     "address": "Lucknow, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 168,
@@ -881,7 +949,8 @@
     "dateOfBirth": "1996-08-12",
     "salary": 80515,
     "address": "Indore, Madhya Pradesh",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 169,
@@ -894,7 +963,8 @@
     "dateOfBirth": "1996-11-17",
     "salary": 82088,
     "address": "Surat, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 170,
@@ -907,7 +977,8 @@
     "dateOfBirth": "1997-02-22",
     "salary": 83661,
     "address": "Noida, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 171,
@@ -920,7 +991,8 @@
     "dateOfBirth": "1997-05-30",
     "salary": 85234,
     "address": "Gurugram, Haryana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 172,
@@ -933,7 +1005,8 @@
     "dateOfBirth": "1997-09-04",
     "salary": 86807,
     "address": "Nagpur, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 173,
@@ -946,7 +1019,8 @@
     "dateOfBirth": "1997-12-10",
     "salary": 88380,
     "address": "Mumbai, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 174,
@@ -959,20 +1033,22 @@
     "dateOfBirth": "1998-03-17",
     "salary": 89953,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 175,
     "name": "Amit Mishra",
     "email": "amit.mishra175@ems.com",
     "phone": "9876543284",
-    "department": "Admin",
+    "department": "Legal",
     "designation": "Accountant",
     "joiningDate": "2021-05-03",
     "dateOfBirth": "1998-06-22",
     "salary": 43526,
     "address": "Bengaluru, Karnataka",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 176,
@@ -985,7 +1061,8 @@
     "dateOfBirth": "1998-09-27",
     "salary": 45099,
     "address": "Hyderabad, Telangana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 177,
@@ -998,7 +1075,8 @@
     "dateOfBirth": "1999-01-02",
     "salary": 46672,
     "address": "Pune, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 178,
@@ -1011,7 +1089,8 @@
     "dateOfBirth": "1999-04-09",
     "salary": 48245,
     "address": "Chennai, Tamil Nadu",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 179,
@@ -1024,7 +1103,8 @@
     "dateOfBirth": "1999-07-15",
     "salary": 49818,
     "address": "Kolkata, West Bengal",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 180,
@@ -1037,7 +1117,8 @@
     "dateOfBirth": "1999-10-20",
     "salary": 51391,
     "address": "Ahmedabad, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 181,
@@ -1050,7 +1131,8 @@
     "dateOfBirth": "2000-01-25",
     "salary": 52964,
     "address": "Jaipur, Rajasthan",
-    "status": "Inactive"
+    "status": "Inactive",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 182,
@@ -1063,20 +1145,22 @@
     "dateOfBirth": "2000-05-01",
     "salary": 54537,
     "address": "Lucknow, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 183,
     "name": "Manish Joshi",
     "email": "manish.joshi183@ems.com",
     "phone": "9876543292",
-    "department": "Admin",
+    "department": "Legal",
     "designation": "Operations Executive",
     "joiningDate": "2022-01-06",
     "dateOfBirth": "2000-08-06",
     "salary": 56110,
     "address": "Indore, Madhya Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 184,
@@ -1089,7 +1173,8 @@
     "dateOfBirth": "2000-11-11",
     "salary": 57683,
     "address": "Surat, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 185,
@@ -1102,7 +1187,8 @@
     "dateOfBirth": "2001-02-16",
     "salary": 59256,
     "address": "Noida, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 186,
@@ -1115,7 +1201,8 @@
     "dateOfBirth": "2001-05-24",
     "salary": 60829,
     "address": "Gurugram, Haryana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 187,
@@ -1128,7 +1215,8 @@
     "dateOfBirth": "2001-08-29",
     "salary": 62402,
     "address": "Nagpur, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 188,
@@ -1141,7 +1229,8 @@
     "dateOfBirth": "2001-12-04",
     "salary": 63975,
     "address": "Mumbai, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 189,
@@ -1154,7 +1243,8 @@
     "dateOfBirth": "1992-03-13",
     "salary": 65548,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 190,
@@ -1167,20 +1257,22 @@
     "dateOfBirth": "1992-06-18",
     "salary": 67121,
     "address": "Bengaluru, Karnataka",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 191,
     "name": "Varun Reddy",
     "email": "varun.reddy191@ems.com",
     "phone": "9876543300",
-    "department": "Admin",
+    "department": "Legal",
     "designation": "Operations Manager",
     "joiningDate": "2022-09-11",
     "dateOfBirth": "1992-09-23",
     "salary": 68694,
     "address": "Hyderabad, Telangana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 192,
@@ -1193,7 +1285,8 @@
     "dateOfBirth": "1992-12-29",
     "salary": 70267,
     "address": "Pune, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 193,
@@ -1206,7 +1299,8 @@
     "dateOfBirth": "1993-04-05",
     "salary": 71840,
     "address": "Chennai, Tamil Nadu",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 194,
@@ -1219,7 +1313,8 @@
     "dateOfBirth": "1993-07-11",
     "salary": 73413,
     "address": "Kolkata, West Bengal",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 195,
@@ -1232,7 +1327,8 @@
     "dateOfBirth": "1993-10-16",
     "salary": 74986,
     "address": "Ahmedabad, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 196,
@@ -1245,7 +1341,8 @@
     "dateOfBirth": "1994-01-21",
     "salary": 76559,
     "address": "Jaipur, Rajasthan",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 197,
@@ -1258,7 +1355,8 @@
     "dateOfBirth": "1994-04-28",
     "salary": 78132,
     "address": "Lucknow, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 198,
@@ -1271,7 +1369,8 @@
     "dateOfBirth": "1994-08-03",
     "salary": 79705,
     "address": "Indore, Madhya Pradesh",
-    "status": "Inactive"
+    "status": "Inactive",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 199,
@@ -1284,7 +1383,8 @@
     "dateOfBirth": "1994-11-08",
     "salary": 81278,
     "address": "Surat, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 200,
@@ -1297,7 +1397,8 @@
     "dateOfBirth": "1995-02-13",
     "salary": 82851,
     "address": "Noida, Uttar Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 201,
@@ -1310,7 +1411,8 @@
     "dateOfBirth": "1995-05-21",
     "salary": 84424,
     "address": "Gurugram, Haryana",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 202,
@@ -1323,7 +1425,8 @@
     "dateOfBirth": "1995-08-26",
     "salary": 85997,
     "address": "Nagpur, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 203,
@@ -1336,7 +1439,8 @@
     "dateOfBirth": "1995-12-01",
     "salary": 87570,
     "address": "Mumbai, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 204,
@@ -1349,7 +1453,8 @@
     "dateOfBirth": "1996-03-07",
     "salary": 89143,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 205,
@@ -1362,7 +1467,8 @@
     "dateOfBirth": "1996-06-12",
     "salary": 42716,
     "address": "Bengaluru, Karnataka",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 206,
@@ -1375,7 +1481,8 @@
     "dateOfBirth": "1996-09-17",
     "salary": 44289,
     "address": "Hyderabad, Telangana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 207,
@@ -1388,7 +1495,8 @@
     "dateOfBirth": "1996-12-23",
     "salary": 45862,
     "address": "Pune, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 208,
@@ -1401,7 +1509,8 @@
     "dateOfBirth": "1997-03-30",
     "salary": 47435,
     "address": "Chennai, Tamil Nadu",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 209,
@@ -1414,7 +1523,8 @@
     "dateOfBirth": "1997-07-05",
     "salary": 49008,
     "address": "Kolkata, West Bengal",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 210,
@@ -1427,7 +1537,8 @@
     "dateOfBirth": "1997-10-10",
     "salary": 50581,
     "address": "Ahmedabad, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 211,
@@ -1440,7 +1551,8 @@
     "dateOfBirth": "1998-01-15",
     "salary": 52154,
     "address": "Jaipur, Rajasthan",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 212,
@@ -1453,7 +1565,8 @@
     "dateOfBirth": "1998-04-22",
     "salary": 53727,
     "address": "Lucknow, Uttar Pradesh",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 213,
@@ -1466,7 +1579,8 @@
     "dateOfBirth": "1998-07-28",
     "salary": 55300,
     "address": "Indore, Madhya Pradesh",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 214,
@@ -1479,7 +1593,8 @@
     "dateOfBirth": "1998-11-02",
     "salary": 56873,
     "address": "Surat, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 215,
@@ -1492,7 +1607,8 @@
     "dateOfBirth": "1999-02-07",
     "salary": 58446,
     "address": "Noida, Uttar Pradesh",
-    "status": "Inactive"
+    "status": "Inactive",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 216,
@@ -1505,7 +1621,8 @@
     "dateOfBirth": "1999-05-15",
     "salary": 60019,
     "address": "Gurugram, Haryana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 217,
@@ -1518,7 +1635,8 @@
     "dateOfBirth": "1999-08-20",
     "salary": 61592,
     "address": "Nagpur, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 218,
@@ -1531,7 +1649,8 @@
     "dateOfBirth": "1999-11-25",
     "salary": 63165,
     "address": "Mumbai, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 219,
@@ -1544,7 +1663,8 @@
     "dateOfBirth": "2000-03-01",
     "salary": 64738,
     "address": "Delhi",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 220,
@@ -1557,7 +1677,8 @@
     "dateOfBirth": "2000-06-06",
     "salary": 66311,
     "address": "Bengaluru, Karnataka",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 221,
@@ -1570,7 +1691,8 @@
     "dateOfBirth": "2000-09-11",
     "salary": 67884,
     "address": "Hyderabad, Telangana",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 222,
@@ -1583,7 +1705,8 @@
     "dateOfBirth": "2000-12-17",
     "salary": 69457,
     "address": "Pune, Maharashtra",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 223,
@@ -1596,7 +1719,8 @@
     "dateOfBirth": "2001-03-24",
     "salary": 71030,
     "address": "Chennai, Tamil Nadu",
-    "status": "On Leave"
+    "status": "On Leave",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 224,
@@ -1609,7 +1733,8 @@
     "dateOfBirth": "2001-06-29",
     "salary": 72603,
     "address": "Kolkata, West Bengal",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   },
   {
     "employeeId": 225,
@@ -1622,6 +1747,7 @@
     "dateOfBirth": "2001-10-04",
     "salary": 74176,
     "address": "Ahmedabad, Gujarat",
-    "status": "Active"
+    "status": "Active",
+    "isDepartmentHead": false
   }
 ]

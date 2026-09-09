@@ -1,1 +1,127 @@
-<p>departments works!</p>
+<section class="page-header">
+
+  <div>
+    <h1>Departments</h1>
+    <p>Manage departments and their organizational structure.</p>
+  </div>
+
+</section>
+
+
+<section class="filter-section">
+
+  <div class="search-box">
+
+    <mat-icon>search</mat-icon>
+
+    <input
+      type="text"
+      [(ngModel)]="searchText"
+      placeholder="Search departments by name, head, or keyword...">
+
+  </div>
+
+</section>
+
+
+<section class="department-section">
+
+  <div class="section-header">
+
+    <div>
+      <h2>All Departments</h2>
+      <p>Departments in your organization</p>
+    </div>
+
+  </div>
+
+
+  <div class="department-grid">
+
+    @for (department of departments; track department.name) {
+
+      <div class="department-card">
+
+        <div class="card-top">
+
+          <div class="department-icon">
+            <mat-icon>{{ department.icon }}</mat-icon>
+          </div>
+
+          <span class="status">Active</span>
+
+        </div>
+
+
+        <h3>{{ department.name }}</h3>
+
+        <p class="description">
+          {{ department.description }}
+        </p>
+
+
+        <div class="department-info">
+
+          <div class="info-item">
+
+            <mat-icon>person</mat-icon>
+
+            <div>
+              <span>Department Head</span>
+              <strong>{{ department.head }}</strong>
+            </div>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <mat-icon>groups</mat-icon>
+
+            <div>
+              <span>Employees</span>
+              <strong>{{ department.employees }}</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="card-actions">
+
+          <button class="view-btn" (click)="viewDepartment(department)">
+            <mat-icon>visibility</mat-icon>
+            View
+          </button>
+
+         
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+</section>
+<!-- 
+
+<div class="pagination">
+
+  <span>
+    Showing 1 - {{ departments.length }} of {{ departments.length }} departments
+  </span>
+
+  <button>
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+
+  <button class="current-page">1</button>
+
+  <button>
+    <mat-icon>chevron_right</mat-icon>
+  </button>
+
+</div> -->

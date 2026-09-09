@@ -27,7 +27,7 @@ app-navbar {
   height: 100%;
   box-sizing: border-box;
   padding: 15px 10px;
-  background: #f5f8fc;
+  background: cyan;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0;

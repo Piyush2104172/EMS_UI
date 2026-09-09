@@ -1,1 +1,87 @@
-<p>employees works!</p>
+<section class="page-header">
+
+  <div>
+    <h1>Employees</h1>
+    <p>Manage and monitor all employees in your organization.</p>
+  </div>
+
+  <button class="add-btn">
+    <mat-icon>add</mat-icon>
+    Add Employee
+  </button>
+
+</section>
+
+
+<app-statistics></app-statistics>
+
+
+<section class="employee-section">
+
+  <div class="filter-header">
+
+    <div class="search-box">
+      <mat-icon>search</mat-icon>
+
+      <input
+        type="text"
+        [(ngModel)]="searchText"
+        (input)="applyFilters()"
+        placeholder="Search by name, email, or ID">
+    </div>
+
+
+    <select
+      [(ngModel)]="selectedDepartment"
+      (change)="applyFilters()">
+
+      <option value="">All Departments</option>
+
+      @for (department of departments; track department) {
+        <option [value]="department">
+          {{ department }}
+        </option>
+      }
+
+    </select>
+
+
+    <select
+      [(ngModel)]="selectedStatus"
+      (change)="applyFilters()">
+
+      <option value="">All Status</option>
+      <option value="Active">Active</option>
+      <option value="On Leave">On Leave</option>
+      <option value="Inactive">Inactive</option>
+
+    </select>
+
+
+    <button
+      class="clear-btn"
+      (click)="clearFilters()">
+
+      <mat-icon>clear</mat-icon>
+      Clear Filters
+
+    </button>
+
+  </div>
+
+
+  <div class="table-container">
+
+    <ag-grid-angular
+      class="ag-theme-quartz"
+      [rowData]="filteredEmployees"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [pagination]="true"
+      [paginationPageSize]="10"
+      [animateRows]="true">
+    </ag-grid-angular>
+
+  </div>
+
+</section>                                          

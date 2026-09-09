@@ -1,1 +1,103 @@
-<p>attendance-register works!</p>
+<div class="attendance-page">
+
+  <div class="page-header">
+
+    <div>
+      <h1>Attendance</h1>
+      <p>View employee attendance across all departments</p>
+    </div>
+
+    <div class="date-box">
+
+      <mat-icon>calendar_today</mat-icon>
+
+      <input type="date" [(ngModel)]="selectedDate" [min]="dates[0]" [max]="dates[dates.length - 1]">
+
+    </div>
+
+  </div>
+
+
+  <div class="attendance">
+
+    <div class="attendance-card">
+      <span>Total Employees</span>
+      <strong>{{ totalEmployees }}</strong>
+    </div>
+
+    <div class="attendance-card">
+      <span>Present</span>
+      <strong>{{ totalPresent }}</strong>
+    </div>
+
+    <div class="attendance-card">
+      <span>Absent</span>
+      <strong>{{ totalAbsent }}</strong>
+    </div>
+
+  </div>
+
+
+  <div class="department-grid">
+
+    @for (department of departments; track department.name) {
+
+    <div class="department-card">
+
+      <div class="card-header">
+
+        <div class="department-icon">
+          <mat-icon>business</mat-icon>
+        </div>
+
+        <div>
+          <h2>{{ department.name }}</h2>
+          <p>{{ department.employees }} Employees</p>
+        </div>
+
+      </div>
+
+
+      <div class="attendance-count">
+
+        <div class="count present">
+
+          <div>
+            <mat-icon>person</mat-icon>
+            <span>Present</span>
+          </div>
+
+          <strong>{{ department.present }}</strong>
+
+        </div>
+
+
+        <div class="count absent">
+
+          <div>
+            <mat-icon>person_off</mat-icon>
+            <span>Absent</span>
+          </div>
+
+          <strong>{{ department.absent }}</strong>
+
+        </div>
+
+      </div>
+
+
+      <button class="view-btn" (click)="viewAttendance(department)">
+
+        <mat-icon>visibility</mat-icon>
+
+        View Attendance
+
+      </button>
+
+    </div>
+
+    }
+
+  </div>
+
+</div>
