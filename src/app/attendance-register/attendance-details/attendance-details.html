@@ -1,101 +1,81 @@
 <div class="details-page">
-
   <button class="back-btn" (click)="goBack()">
     <mat-icon>arrow_back</mat-icon>
     Back to Attendance
   </button>
 
-
   <div class="details-header">
-
     <div class="department-info">
-
       <div class="department-icon">
         <mat-icon>{{ getDepartmentIcon() }}</mat-icon>
       </div>
-
       <div>
         <h1>{{ department }} - Attendance</h1>
-        <p>Daily attendance details for {{ department }} department</p>
+        <p>
+          Daily attendance details for
+          {{ department }} department
+        </p>
       </div>
-
     </div>
-
 
     <div class="date-box">
-
       <mat-icon>calendar_today</mat-icon>
-
       <span>{{ formattedDate }}</span>
-
     </div>
-
   </div>
 
 
   <div class="summary">
-
     <div class="summary-card total">
-
       <mat-icon>groups</mat-icon>
-
       <div>
         <span>Total Employees</span>
-        <strong>
-          {{ presentEmployees.length + absentEmployees.length }}
-        </strong>
+        <strong>{{ presentEmployees.length + absentEmployees.length }}</strong>
       </div>
-
     </div>
 
 
     <div class="summary-card present">
-
       <mat-icon>person</mat-icon>
-
       <div>
         <span>Present</span>
-        <strong>{{ presentEmployees.length }}</strong>
+        <strong>
+          {{ presentEmployees.length }}
+        </strong>
       </div>
-
     </div>
-
 
     <div class="summary-card absent">
-
       <mat-icon>person_off</mat-icon>
-
       <div>
         <span>Absent</span>
-        <strong>{{ absentEmployees.length }}</strong>
+        <strong>
+          {{ absentEmployees.length }}
+        </strong>
       </div>
-
     </div>
-
   </div>
 
+
   <div class="grid-container">
-
-
     <div class="grid-section present-section">
-
       <div class="section-header">
-
         <div>
           <mat-icon>person</mat-icon>
-
           <div>
             <h2>Present Employees</h2>
-            <p>{{ presentEmployees.length }} employees present</p>
+            <p>
+              {{ filteredPresentEmployees.length }}
+              employees present
+            </p>
           </div>
         </div>
 
-        <input type="text" placeholder="Search employees...">
-
+        <input type="text" placeholder="Search employees..." (input)="filterPresent($event)">
       </div>
 
 
-      <ag-grid-angular class="attendance-grid" [rowData]="presentEmployees" [columnDefs]="presentColumns"
+      <ag-grid-angular class="attendance-grid" [rowData]="filteredPresentEmployees" [columnDefs]="presentColumns"
         [defaultColDef]="defaultColDef" [pagination]="true" [paginationPageSize]="5"
         [paginationPageSizeSelector]="false">
       </ag-grid-angular>
@@ -104,28 +84,27 @@
 
 
     <div class="grid-section absent-section">
-
       <div class="section-header">
-
         <div>
           <mat-icon>person_off</mat-icon>
-
           <div>
             <h2>Absent Employees</h2>
-            <p>{{ absentEmployees.length }} employees absent</p>
+            <p>
+              {{ filteredAbsentEmployees.length }}
+              employees absent
+            </p>
           </div>
         </div>
 
-        <input type="text" placeholder="Search employees..."  [(ngModel)]="searchPresent">
 
+        <input type="text" placeholder="Search employees..." (input)="filterAbsent($event)">
       </div>
 
 
-      <ag-grid-angular class="attendance-grid" [rowData]="absentEmployees" [columnDefs]="absentColumns"
+      <ag-grid-angular class="attendance-grid" [rowData]="filteredAbsentEmployees" [columnDefs]="absentColumns"
         [defaultColDef]="defaultColDef" [pagination]="true" [paginationPageSize]="5"
-        [paginationPageSizeSelector]="false" [quickFilterText]="searchPresent">
+        [paginationPageSizeSelector]="false">
       </ag-grid-angular>
-
     </div>
   </div>
 </div>
