@@ -20,7 +20,6 @@ export class Navbar {
     { label: 'Attendance', icon: 'event_available', path: '/attendance' },
     { label: 'Leave Management', icon: 'description', path: '/leavemanager' },
     { label: 'Payroll', icon: 'credit_card', path: '/payroll' },
-    { label: 'Reports', icon: 'bar_chart', path: '/reports' },
     { label: 'Settings', icon: 'settings', path: '/settings' }
   ];
 
