@@ -12,7 +12,37 @@
         "dateOfBirth": "1993-01-01",
         "salary": 42000,
         "address": "Mumbai, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1001",
+                "leaveType": "Sick Leave",
+                "fromDate": "2026-09-03",
+                "toDate": "2026-09-03",
+                "days": 1,
+                "status": "Approved",
+                "appliedOn": "2026-08-31",
+                "reason": "Sick Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 31500,
+            "hra": 6300,
+            "allowances": 4200,
+            "grossSalary": 42000,
+            "deductions": {
+                "pf": 1575,
+                "tds": 2100,
+                "otherDeductions": 500,
+                "leaveDeduction": 1400
+            },
+            "totalDeductions": 5575,
+            "netSalary": 36425,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 102,
@@ -27,7 +57,37 @@
         "dateOfBirth": "1994-02-02",
         "salary": 42850,
         "address": "Delhi, India",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1002",
+                "leaveType": "Casual Leave",
+                "fromDate": "2026-09-05",
+                "toDate": "2026-09-06",
+                "days": 2,
+                "status": "Approved",
+                "appliedOn": "2026-09-02",
+                "reason": "Casual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 32138,
+            "hra": 6428,
+            "allowances": 4284,
+            "grossSalary": 42850,
+            "deductions": {
+                "pf": 1607,
+                "tds": 2142,
+                "otherDeductions": 0,
+                "leaveDeduction": 2857
+            },
+            "totalDeductions": 6606,
+            "netSalary": 36244,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 103,
@@ -42,7 +102,37 @@
         "dateOfBirth": "1995-03-03",
         "salary": 43700,
         "address": "Pune, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1003",
+                "leaveType": "Annual Leave",
+                "fromDate": "2026-09-07",
+                "toDate": "2026-09-09",
+                "days": 3,
+                "status": "Pending",
+                "appliedOn": "2026-09-04",
+                "reason": "Annual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 32775,
+            "hra": 6555,
+            "allowances": 4370,
+            "grossSalary": 43700,
+            "deductions": {
+                "pf": 1639,
+                "tds": 2185,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 3824,
+            "netSalary": 39876,
+            "status": "Pending",
+            "paymentDate": null
+        }
     },
     {
         "employeeId": 104,
@@ -57,7 +147,37 @@
         "dateOfBirth": "1996-04-04",
         "salary": 44550,
         "address": "Bengaluru, Karnataka",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1004",
+                "leaveType": "Maternity Leave",
+                "fromDate": "2026-09-09",
+                "toDate": "2026-09-09",
+                "days": 1,
+                "status": "Rejected",
+                "appliedOn": "2026-09-06",
+                "reason": "Maternity Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 33412,
+            "hra": 6682,
+            "allowances": 4456,
+            "grossSalary": 44550,
+            "deductions": {
+                "pf": 1671,
+                "tds": 2228,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 3899,
+            "netSalary": 40651,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 105,
@@ -72,7 +192,37 @@
         "dateOfBirth": "1997-05-05",
         "salary": 45400,
         "address": "Hyderabad, Telangana",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1005",
+                "leaveType": "Sick Leave",
+                "fromDate": "2026-09-11",
+                "toDate": "2026-09-12",
+                "days": 2,
+                "status": "Approved",
+                "appliedOn": "2026-09-08",
+                "reason": "Sick Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 34050,
+            "hra": 6810,
+            "allowances": 4540,
+            "grossSalary": 45400,
+            "deductions": {
+                "pf": 1702,
+                "tds": 2270,
+                "otherDeductions": 500,
+                "leaveDeduction": 3027
+            },
+            "totalDeductions": 7499,
+            "netSalary": 37901,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 106,
@@ -87,7 +237,37 @@
         "dateOfBirth": "1998-06-06",
         "salary": 46250,
         "address": "Mumbai, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1006",
+                "leaveType": "Casual Leave",
+                "fromDate": "2026-09-13",
+                "toDate": "2026-09-15",
+                "days": 3,
+                "status": "Approved",
+                "appliedOn": "2026-09-10",
+                "reason": "Casual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 34688,
+            "hra": 6938,
+            "allowances": 4624,
+            "grossSalary": 46250,
+            "deductions": {
+                "pf": 1734,
+                "tds": 2312,
+                "otherDeductions": 0,
+                "leaveDeduction": 4625
+            },
+            "totalDeductions": 8671,
+            "netSalary": 37579,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 107,
@@ -102,7 +282,37 @@
         "dateOfBirth": "1999-07-07",
         "salary": 47100,
         "address": "Delhi, India",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1007",
+                "leaveType": "Annual Leave",
+                "fromDate": "2026-09-15",
+                "toDate": "2026-09-15",
+                "days": 1,
+                "status": "Pending",
+                "appliedOn": "2026-09-12",
+                "reason": "Annual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 35325,
+            "hra": 7065,
+            "allowances": 4710,
+            "grossSalary": 47100,
+            "deductions": {
+                "pf": 1766,
+                "tds": 2355,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 4121,
+            "netSalary": 42979,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 108,
@@ -117,7 +327,37 @@
         "dateOfBirth": "1993-08-08",
         "salary": 47950,
         "address": "Pune, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1008",
+                "leaveType": "Maternity Leave",
+                "fromDate": "2026-09-17",
+                "toDate": "2026-09-18",
+                "days": 2,
+                "status": "Rejected",
+                "appliedOn": "2026-09-14",
+                "reason": "Maternity Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 35962,
+            "hra": 7192,
+            "allowances": 4796,
+            "grossSalary": 47950,
+            "deductions": {
+                "pf": 1798,
+                "tds": 2398,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 4196,
+            "netSalary": 43754,
+            "status": "Pending",
+            "paymentDate": null
+        }
     },
     {
         "employeeId": 109,
@@ -132,7 +372,37 @@
         "dateOfBirth": "1994-09-09",
         "salary": 48800,
         "address": "Bengaluru, Karnataka",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1009",
+                "leaveType": "Sick Leave",
+                "fromDate": "2026-09-19",
+                "toDate": "2026-09-21",
+                "days": 3,
+                "status": "Approved",
+                "appliedOn": "2026-09-16",
+                "reason": "Sick Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 36600,
+            "hra": 7320,
+            "allowances": 4880,
+            "grossSalary": 48800,
+            "deductions": {
+                "pf": 1830,
+                "tds": 2440,
+                "otherDeductions": 500,
+                "leaveDeduction": 4880
+            },
+            "totalDeductions": 9650,
+            "netSalary": 39150,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 110,
@@ -147,7 +417,37 @@
         "dateOfBirth": "1995-10-10",
         "salary": 49650,
         "address": "Hyderabad, Telangana",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1010",
+                "leaveType": "Casual Leave",
+                "fromDate": "2026-09-21",
+                "toDate": "2026-09-21",
+                "days": 1,
+                "status": "Approved",
+                "appliedOn": "2026-09-18",
+                "reason": "Casual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 37238,
+            "hra": 7448,
+            "allowances": 4964,
+            "grossSalary": 49650,
+            "deductions": {
+                "pf": 1862,
+                "tds": 2482,
+                "otherDeductions": 0,
+                "leaveDeduction": 1655
+            },
+            "totalDeductions": 5999,
+            "netSalary": 43651,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 111,
@@ -162,7 +462,37 @@
         "dateOfBirth": "1996-11-11",
         "salary": 50500,
         "address": "Mumbai, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1011",
+                "leaveType": "Annual Leave",
+                "fromDate": "2026-09-23",
+                "toDate": "2026-09-24",
+                "days": 2,
+                "status": "Pending",
+                "appliedOn": "2026-09-20",
+                "reason": "Annual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 37875,
+            "hra": 7575,
+            "allowances": 5050,
+            "grossSalary": 50500,
+            "deductions": {
+                "pf": 1894,
+                "tds": 2525,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 4419,
+            "netSalary": 46081,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 112,
@@ -177,7 +507,37 @@
         "dateOfBirth": "1997-12-12",
         "salary": 51350,
         "address": "Delhi, India",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1012",
+                "leaveType": "Maternity Leave",
+                "fromDate": "2026-09-03",
+                "toDate": "2026-09-05",
+                "days": 3,
+                "status": "Rejected",
+                "appliedOn": "2026-08-31",
+                "reason": "Maternity Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 38512,
+            "hra": 7702,
+            "allowances": 5136,
+            "grossSalary": 51350,
+            "deductions": {
+                "pf": 1926,
+                "tds": 2568,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 4494,
+            "netSalary": 46856,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 113,
@@ -192,7 +552,37 @@
         "dateOfBirth": "1998-01-13",
         "salary": 52200,
         "address": "Pune, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1013",
+                "leaveType": "Sick Leave",
+                "fromDate": "2026-09-05",
+                "toDate": "2026-09-05",
+                "days": 1,
+                "status": "Approved",
+                "appliedOn": "2026-09-02",
+                "reason": "Sick Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 39150,
+            "hra": 7830,
+            "allowances": 5220,
+            "grossSalary": 52200,
+            "deductions": {
+                "pf": 1958,
+                "tds": 2610,
+                "otherDeductions": 500,
+                "leaveDeduction": 1740
+            },
+            "totalDeductions": 6808,
+            "netSalary": 45392,
+            "status": "Pending",
+            "paymentDate": null
+        }
     },
     {
         "employeeId": 114,
@@ -207,7 +597,37 @@
         "dateOfBirth": "1999-02-14",
         "salary": 53050,
         "address": "Bengaluru, Karnataka",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1014",
+                "leaveType": "Casual Leave",
+                "fromDate": "2026-09-07",
+                "toDate": "2026-09-08",
+                "days": 2,
+                "status": "Approved",
+                "appliedOn": "2026-09-04",
+                "reason": "Casual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 39788,
+            "hra": 7958,
+            "allowances": 5304,
+            "grossSalary": 53050,
+            "deductions": {
+                "pf": 1989,
+                "tds": 2652,
+                "otherDeductions": 0,
+                "leaveDeduction": 3537
+            },
+            "totalDeductions": 8178,
+            "netSalary": 44872,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 115,
@@ -222,7 +642,37 @@
         "dateOfBirth": "1993-03-15",
         "salary": 53900,
         "address": "Hyderabad, Telangana",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1015",
+                "leaveType": "Annual Leave",
+                "fromDate": "2026-09-09",
+                "toDate": "2026-09-11",
+                "days": 3,
+                "status": "Pending",
+                "appliedOn": "2026-09-06",
+                "reason": "Annual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 40425,
+            "hra": 8085,
+            "allowances": 5390,
+            "grossSalary": 53900,
+            "deductions": {
+                "pf": 2021,
+                "tds": 2695,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 4716,
+            "netSalary": 49184,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 116,
@@ -237,7 +687,37 @@
         "dateOfBirth": "1994-04-16",
         "salary": 54750,
         "address": "Mumbai, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1016",
+                "leaveType": "Maternity Leave",
+                "fromDate": "2026-09-11",
+                "toDate": "2026-09-11",
+                "days": 1,
+                "status": "Rejected",
+                "appliedOn": "2026-09-08",
+                "reason": "Maternity Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 41062,
+            "hra": 8212,
+            "allowances": 5476,
+            "grossSalary": 54750,
+            "deductions": {
+                "pf": 2053,
+                "tds": 2738,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 4791,
+            "netSalary": 49959,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 117,
@@ -252,7 +732,37 @@
         "dateOfBirth": "1995-05-17",
         "salary": 55600,
         "address": "Delhi, India",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1017",
+                "leaveType": "Sick Leave",
+                "fromDate": "2026-09-13",
+                "toDate": "2026-09-14",
+                "days": 2,
+                "status": "Approved",
+                "appliedOn": "2026-09-10",
+                "reason": "Sick Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 41700,
+            "hra": 8340,
+            "allowances": 5560,
+            "grossSalary": 55600,
+            "deductions": {
+                "pf": 2085,
+                "tds": 2780,
+                "otherDeductions": 500,
+                "leaveDeduction": 3707
+            },
+            "totalDeductions": 9072,
+            "netSalary": 46528,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 118,
@@ -267,7 +777,37 @@
         "dateOfBirth": "1996-06-18",
         "salary": 56450,
         "address": "Pune, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1018",
+                "leaveType": "Casual Leave",
+                "fromDate": "2026-09-15",
+                "toDate": "2026-09-17",
+                "days": 3,
+                "status": "Approved",
+                "appliedOn": "2026-09-12",
+                "reason": "Casual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 42338,
+            "hra": 8468,
+            "allowances": 5644,
+            "grossSalary": 56450,
+            "deductions": {
+                "pf": 2117,
+                "tds": 2822,
+                "otherDeductions": 0,
+                "leaveDeduction": 5645
+            },
+            "totalDeductions": 10584,
+            "netSalary": 45866,
+            "status": "Pending",
+            "paymentDate": null
+        }
     },
     {
         "employeeId": 119,
@@ -282,7 +822,37 @@
         "dateOfBirth": "1997-07-19",
         "salary": 57300,
         "address": "Bengaluru, Karnataka",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1019",
+                "leaveType": "Annual Leave",
+                "fromDate": "2026-09-17",
+                "toDate": "2026-09-17",
+                "days": 1,
+                "status": "Pending",
+                "appliedOn": "2026-09-14",
+                "reason": "Annual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 42975,
+            "hra": 8595,
+            "allowances": 5730,
+            "grossSalary": 57300,
+            "deductions": {
+                "pf": 2149,
+                "tds": 2865,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 5014,
+            "netSalary": 52286,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 120,
@@ -297,7 +867,37 @@
         "dateOfBirth": "1998-08-20",
         "salary": 58150,
         "address": "Hyderabad, Telangana",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1020",
+                "leaveType": "Maternity Leave",
+                "fromDate": "2026-09-19",
+                "toDate": "2026-09-20",
+                "days": 2,
+                "status": "Rejected",
+                "appliedOn": "2026-09-16",
+                "reason": "Maternity Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 43612,
+            "hra": 8722,
+            "allowances": 5816,
+            "grossSalary": 58150,
+            "deductions": {
+                "pf": 2181,
+                "tds": 2908,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 5089,
+            "netSalary": 53061,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 121,
@@ -312,7 +912,37 @@
         "dateOfBirth": "1999-09-21",
         "salary": 59000,
         "address": "Mumbai, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1021",
+                "leaveType": "Sick Leave",
+                "fromDate": "2026-09-21",
+                "toDate": "2026-09-23",
+                "days": 3,
+                "status": "Approved",
+                "appliedOn": "2026-09-18",
+                "reason": "Sick Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 44250,
+            "hra": 8850,
+            "allowances": 5900,
+            "grossSalary": 59000,
+            "deductions": {
+                "pf": 2212,
+                "tds": 2950,
+                "otherDeductions": 500,
+                "leaveDeduction": 5900
+            },
+            "totalDeductions": 11562,
+            "netSalary": 47438,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 122,
@@ -327,7 +957,37 @@
         "dateOfBirth": "1993-10-22",
         "salary": 59850,
         "address": "Delhi, India",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1022",
+                "leaveType": "Casual Leave",
+                "fromDate": "2026-09-23",
+                "toDate": "2026-09-23",
+                "days": 1,
+                "status": "Pending",
+                "appliedOn": "2026-09-20",
+                "reason": "Casual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 44888,
+            "hra": 8978,
+            "allowances": 5984,
+            "grossSalary": 59850,
+            "deductions": {
+                "pf": 2244,
+                "tds": 2992,
+                "otherDeductions": 0,
+                "leaveDeduction": 1995
+            },
+            "totalDeductions": 7231,
+            "netSalary": 52619,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 123,
@@ -342,7 +1002,37 @@
         "dateOfBirth": "1994-11-23",
         "salary": 60700,
         "address": "Pune, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1023",
+                "leaveType": "Annual Leave",
+                "fromDate": "2026-09-03",
+                "toDate": "2026-09-04",
+                "days": 2,
+                "status": "Pending",
+                "appliedOn": "2026-08-31",
+                "reason": "Annual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 45525,
+            "hra": 9105,
+            "allowances": 6070,
+            "grossSalary": 60700,
+            "deductions": {
+                "pf": 2276,
+                "tds": 3035,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 5311,
+            "netSalary": 55389,
+            "status": "Pending",
+            "paymentDate": null
+        }
     },
     {
         "employeeId": 124,
@@ -357,7 +1047,37 @@
         "dateOfBirth": "1995-12-24",
         "salary": 61550,
         "address": "Bengaluru, Karnataka",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1024",
+                "leaveType": "Maternity Leave",
+                "fromDate": "2026-09-05",
+                "toDate": "2026-09-07",
+                "days": 3,
+                "status": "Rejected",
+                "appliedOn": "2026-09-02",
+                "reason": "Maternity Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 46162,
+            "hra": 9232,
+            "allowances": 6156,
+            "grossSalary": 61550,
+            "deductions": {
+                "pf": 2308,
+                "tds": 3078,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 5386,
+            "netSalary": 56164,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 125,
@@ -372,7 +1092,37 @@
         "dateOfBirth": "1996-01-25",
         "salary": 62400,
         "address": "Hyderabad, Telangana",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1025",
+                "leaveType": "Sick Leave",
+                "fromDate": "2026-09-07",
+                "toDate": "2026-09-07",
+                "days": 1,
+                "status": "Approved",
+                "appliedOn": "2026-09-04",
+                "reason": "Sick Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 46800,
+            "hra": 9360,
+            "allowances": 6240,
+            "grossSalary": 62400,
+            "deductions": {
+                "pf": 2340,
+                "tds": 3120,
+                "otherDeductions": 500,
+                "leaveDeduction": 2080
+            },
+            "totalDeductions": 8040,
+            "netSalary": 54360,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 126,
@@ -387,7 +1137,37 @@
         "dateOfBirth": "1997-02-01",
         "salary": 63250,
         "address": "Mumbai, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1026",
+                "leaveType": "Casual Leave",
+                "fromDate": "2026-09-09",
+                "toDate": "2026-09-10",
+                "days": 2,
+                "status": "Approved",
+                "appliedOn": "2026-09-06",
+                "reason": "Casual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 47438,
+            "hra": 9488,
+            "allowances": 6324,
+            "grossSalary": 63250,
+            "deductions": {
+                "pf": 2372,
+                "tds": 3162,
+                "otherDeductions": 0,
+                "leaveDeduction": 4217
+            },
+            "totalDeductions": 9751,
+            "netSalary": 53499,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 127,
@@ -402,7 +1182,37 @@
         "dateOfBirth": "1998-03-02",
         "salary": 64100,
         "address": "Delhi, India",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1027",
+                "leaveType": "Annual Leave",
+                "fromDate": "2026-09-11",
+                "toDate": "2026-09-13",
+                "days": 3,
+                "status": "Pending",
+                "appliedOn": "2026-09-08",
+                "reason": "Annual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 48075,
+            "hra": 9615,
+            "allowances": 6410,
+            "grossSalary": 64100,
+            "deductions": {
+                "pf": 2404,
+                "tds": 3205,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 5609,
+            "netSalary": 58491,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 128,
@@ -417,7 +1227,37 @@
         "dateOfBirth": "1999-04-03",
         "salary": 64950,
         "address": "Pune, Maharashtra",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1028",
+                "leaveType": "Maternity Leave",
+                "fromDate": "2026-09-13",
+                "toDate": "2026-09-13",
+                "days": 1,
+                "status": "Rejected",
+                "appliedOn": "2026-09-10",
+                "reason": "Maternity Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 48712,
+            "hra": 9742,
+            "allowances": 6496,
+            "grossSalary": 64950,
+            "deductions": {
+                "pf": 2436,
+                "tds": 3248,
+                "otherDeductions": 0,
+                "leaveDeduction": 0
+            },
+            "totalDeductions": 5684,
+            "netSalary": 59266,
+            "status": "Pending",
+            "paymentDate": null
+        }
     },
     {
         "employeeId": 129,
@@ -432,7 +1272,37 @@
         "dateOfBirth": "1993-05-04",
         "salary": 65800,
         "address": "Bengaluru, Karnataka",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1029",
+                "leaveType": "Sick Leave",
+                "fromDate": "2026-09-15",
+                "toDate": "2026-09-16",
+                "days": 2,
+                "status": "Rejected",
+                "appliedOn": "2026-09-12",
+                "reason": "Sick Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 49350,
+            "hra": 9870,
+            "allowances": 6580,
+            "grossSalary": 65800,
+            "deductions": {
+                "pf": 2468,
+                "tds": 3290,
+                "otherDeductions": 500,
+                "leaveDeduction": 4387
+            },
+            "totalDeductions": 10645,
+            "netSalary": 55155,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     },
     {
         "employeeId": 130,
@@ -447,6 +1317,36 @@
         "dateOfBirth": "1994-06-05",
         "salary": 66650,
         "address": "Hyderabad, Telangana",
-        "status": "Active"
+        "status": "Active",
+        "leaves": [
+            {
+                "leaveId": "LV1030",
+                "leaveType": "Casual Leave",
+                "fromDate": "2026-09-17",
+                "toDate": "2026-09-19",
+                "days": 3,
+                "status": "Approved",
+                "appliedOn": "2026-09-14",
+                "reason": "Casual Leave request"
+            }
+        ],
+        "payroll": {
+            "month": "September",
+            "year": 2026,
+            "basicSalary": 49988,
+            "hra": 9998,
+            "allowances": 6664,
+            "grossSalary": 66650,
+            "deductions": {
+                "pf": 2499,
+                "tds": 3332,
+                "otherDeductions": 0,
+                "leaveDeduction": 6665
+            },
+            "totalDeductions": 12496,
+            "netSalary": 54154,
+            "status": "Paid",
+            "paymentDate": "2026-09-30"
+        }
     }
 ]
