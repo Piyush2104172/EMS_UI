@@ -20,22 +20,42 @@
 
   <div class="attendance">
 
-    <div class="attendance-card">
+  <div class="attendance-card">
+    <div class="attendance-icon total">
+      <mat-icon>people</mat-icon>
+    </div>
+
+    <div>
       <span>Total Employees</span>
       <strong>{{ totalEmployees }}</strong>
     </div>
+  </div>
 
-    <div class="attendance-card">
+
+  <div class="attendance-card">
+    <div class="attendance-icon present">
+      <mat-icon>check_circle</mat-icon>
+    </div>
+
+    <div>
       <span>Present</span>
       <strong>{{ totalPresent }}</strong>
     </div>
+  </div>
 
-    <div class="attendance-card">
+
+  <div class="attendance-card">
+    <div class="attendance-icon absent">
+      <mat-icon>cancel</mat-icon>
+    </div>
+
+    <div>
       <span>Absent</span>
       <strong>{{ totalAbsent }}</strong>
     </div>
-
   </div>
+
+</div>
 
 
   <div class="department-grid">
