@@ -1,0 +1,286 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.details-panel {
+  height: 100%;
+  box-sizing: border-box;
+
+  padding: 18px;
+
+  background: white;
+
+  border-left: 1px solid #e5eaf0;
+}
+
+
+.details-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eef1f5;
+}
+
+.details-header h2 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #172033;
+}
+
+.details-header p {
+  margin: 4px 0 0;
+
+  font-size: 11px;
+  color: #667085;
+}
+
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #d9dee7;
+  border-radius: 5px;
+
+  background: white;
+  color: #667085;
+
+  cursor: pointer;
+}
+
+.close-btn mat-icon {
+  width: 17px;
+  height: 17px;
+  font-size: 17px;
+}
+
+
+.employee-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 15px 0;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eaf2ff;
+  color: #2563eb;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.employee-info strong {
+  display: block;
+
+  font-size: 12px;
+  color: #172033;
+}
+
+.employee-info span {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 10px;
+  color: #98a2b3;
+}
+
+
+.section {
+  padding: 14px 0;
+
+  border-top: 1px solid #eef1f5;
+}
+
+.section h3 {
+  margin: 0 0 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #344054;
+}
+
+
+.salary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 6px 0;
+
+  font-size: 11px;
+  color: #667085;
+}
+
+.salary-row strong {
+  color: #344054;
+  font-weight: 600;
+}
+
+.salary-row.gross {
+  margin-top: 5px;
+  padding-top: 10px;
+
+  border-top: 1px dashed #d9dee7;
+}
+
+.salary-row.gross span,
+.salary-row.gross strong {
+  color: #172033;
+}
+
+
+.leave-deduction strong {
+  color: #dc3545;
+}
+
+
+.salary-row.total-deduction {
+  margin-top: 5px;
+  padding-top: 10px;
+
+  border-top: 1px dashed #d9dee7;
+}
+
+.total-deduction span,
+.total-deduction strong {
+  color: #172033;
+}
+
+
+.net-salary-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 10px;
+  padding: 14px;
+
+  border-radius: 8px;
+
+  background: #eef4ff;
+}
+
+.net-salary-box span {
+  display: block;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #475467;
+}
+
+.net-salary-box small {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 10px;
+  color: #667085;
+}
+
+.net-salary-box strong {
+  font-size: 20px;
+  color: #2563eb;
+}
+
+
+.payment-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 0;
+}
+
+.payment-status > span:first-child {
+  font-size: 11px;
+  color: #667085;
+}
+
+.status {
+  padding: 5px 9px;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.status.paid {
+  background: #e8f8ef;
+  color: #159957;
+}
+
+.status.pending {
+  background: #fff7df;
+  color: #c58a00;
+}
+
+
+.details-actions {
+  display: flex;
+  gap: 8px;
+
+  margin-top: 12px;
+}
+
+.details-actions button {
+  flex: 1;
+
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.details-actions mat-icon {
+  width: 16px;
+  height: 16px;
+
+  font-size: 16px;
+}
+
+
+.payslip-btn {
+  border: 1px solid #cfd8ff;
+  background: #eef1ff;
+  color: #4f46e5;
+}
+
+.process-btn {
+  border: none;
+  background: #e8f8ef;
+  color: #159957;
+}

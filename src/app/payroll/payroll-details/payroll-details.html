@@ -1,0 +1,179 @@
+@if (employee) {
+
+  <div class="details-panel">
+
+    <div class="details-header">
+
+      <div>
+        <h2>{{ employee.name }}</h2>
+        <p>
+          EMP{{ employee.employeeId }} ·
+          {{ employee.department }}
+        </p>
+      </div>
+
+      <button
+        class="close-btn"
+        (click)="closeDetails()">
+
+        <mat-icon>close</mat-icon>
+
+      </button>
+
+    </div>
+
+
+    <div class="employee-info">
+
+      <div class="avatar">
+        {{ employee.name.charAt(0) }}
+      </div>
+
+      <div>
+        <strong>{{ employee.designation }}</strong>
+        <span>{{ employee.email }}</span>
+      </div>
+
+    </div>
+
+
+    <div class="section">
+
+      <h3>Salary Breakdown</h3>
+
+      <div class="salary-row">
+        <span>Basic Salary</span>
+        <strong>
+          ₹{{ employee.payroll.basicSalary | number }}
+        </strong>
+      </div>
+
+      <div class="salary-row">
+        <span>HRA</span>
+        <strong>
+          ₹{{ employee.payroll.hra | number }}
+        </strong>
+      </div>
+
+      <div class="salary-row">
+        <span>Allowances</span>
+        <strong>
+          ₹{{ employee.payroll.allowances | number }}
+        </strong>
+      </div>
+
+      <div class="salary-row gross">
+        <span>Gross Salary</span>
+        <strong>
+          ₹{{ employee.payroll.grossSalary | number }}
+        </strong>
+      </div>
+
+    </div>
+
+
+    <div class="section">
+
+      <h3>Deductions</h3>
+
+      <div class="salary-row">
+        <span>PF</span>
+        <strong>
+          ₹{{ employee.payroll.deductions.pf | number }}
+        </strong>
+      </div>
+
+      <div class="salary-row">
+        <span>TDS</span>
+        <strong>
+          ₹{{ employee.payroll.deductions.tds | number }}
+        </strong>
+      </div>
+
+      <div class="salary-row">
+        <span>Other Deductions</span>
+        <strong>
+          ₹{{ employee.payroll.deductions.otherDeductions | number }}
+        </strong>
+      </div>
+
+      <div class="salary-row leave-deduction">
+        <span>Leave Deduction</span>
+        <strong>
+          ₹{{ employee.payroll.deductions.leaveDeduction | number }}
+        </strong>
+      </div>
+
+      <div class="salary-row total-deduction">
+        <span>Total Deductions</span>
+        <strong>
+          ₹{{ employee.payroll.totalDeductions | number }}
+        </strong>
+      </div>
+
+    </div>
+
+
+    <div class="net-salary-box">
+
+      <div>
+        <span>Net Salary</span>
+        <small>
+          {{ employee.payroll.month }}
+          {{ employee.payroll.year }}
+        </small>
+      </div>
+
+      <strong>
+        ₹{{ employee.payroll.netSalary | number }}
+      </strong>
+
+    </div>
+
+
+    <div class="payment-status">
+
+      <span>Status</span>
+
+      <span
+        class="status"
+        [class.paid]="employee.payroll.status === 'Paid'"
+        [class.pending]="employee.payroll.status === 'Pending'">
+
+        {{ employee.payroll.status }}
+
+      </span>
+
+    </div>
+
+
+    <div class="details-actions">
+
+      <button
+        class="payslip-btn"
+        (click)="viewPayslip()">
+
+        <mat-icon>receipt_long</mat-icon>
+        View Payslip
+
+      </button>
+
+
+      @if (employee.payroll.status === 'Pending') {
+
+        <button
+          class="process-btn"
+          (click)="processPayroll()">
+
+          <mat-icon>check_circle</mat-icon>
+          Process Payroll
+
+        </button>
+
+      }
+
+    </div>
+
+  </div>
+
+}

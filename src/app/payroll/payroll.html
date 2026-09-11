@@ -1,1 +1,129 @@
-<p>payroll works!</p>
+<div class="payroll-page">
+
+  <div class="page-header">
+
+    <div>
+      <h1>Payroll Management</h1>
+      <p>Manage employee salaries and monthly payroll</p>
+    </div>
+
+  </div>
+
+
+  <app-payroll-summary [totalEmployees]="totalEmployees" [totalPayroll]="totalPayroll" [processed]="processedEmployees"
+    [pending]="pendingEmployees" [rejected]="rejectedEmployees" [leaveDeduction]="totalLeaveDeduction">
+  </app-payroll-summary>
+
+
+  <app-payroll-filters [departments]="departments" [years]="years" [searchText]="searchText"
+    [selectedDepartment]="selectedDepartment" [selectedMonth]="selectedMonth" [selectedYear]="selectedYear"
+    [selectedStatus]="selectedStatus" (searchTextChange)="searchText = $event; currentPage = 1"
+    (departmentChange)="selectedDepartment = $event; currentPage = 1"
+    (monthChange)="selectedMonth = $event; currentPage = 1" (yearChange)="selectedYear = $event; currentPage = 1"
+    (statusChange)="selectedStatus = $event; currentPage = 1" (reset)="resetFilters()">
+  </app-payroll-filters>
+
+
+  <div class="content-area">
+
+    <div class="table-section">
+
+      <div class="section-header">
+
+        <div>
+          <h2>Employee Payroll</h2>
+
+          <span>
+            {{ filteredEmployees.length }} employees
+          </span>
+        </div>
+
+      </div>
+
+
+      <app-payroll-table [employees]="paginatedEmployees" (selectEmployee)="selectEmployee($event)"
+        (processPayroll)="processPayroll($event)" (rejectPayroll)="rejectPayroll($event)"
+        (payslip)="openPayslip($event)">
+      </app-payroll-table>
+
+
+      <div class="pagination">
+
+        <span>
+
+          @if (filteredEmployees.length > 0) {
+
+          Showing
+          {{ (currentPage - 1) * pageSize + 1 }}
+          -
+          {{ Math.min(
+          currentPage * pageSize,
+          filteredEmployees.length
+          ) }}
+          of
+          {{ filteredEmployees.length }}
+
+          } @else {
+
+          No employees found
+
+          }
+
+        </span>
+
+
+        @if (totalPages > 1) {
+
+        <div class="page-buttons">
+
+          <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">
+
+            ‹
+
+          </button>
+
+
+          @for (
+          page of [].constructor(totalPages);
+          track $index
+          ) {
+
+          <button [class.active]="currentPage === $index + 1" (click)="changePage($index + 1)">
+
+            {{ $index + 1 }}
+
+          </button>
+
+          }
+
+
+          <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">
+
+            ›
+
+          </button>
+
+        </div>
+
+        }
+
+      </div>
+
+    </div>
+
+
+    @if (selectedEmployee) {
+
+    <div class="details-section">
+
+      <app-payroll-details [employee]="selectedEmployee" (close)="closeDetails()" (payslip)="openPayslip($event)"
+        (process)="processPayroll($event)">
+      </app-payroll-details>
+
+    </div>
+
+    }
+
+  </div>
+
+</div>

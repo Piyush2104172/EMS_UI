@@ -1,0 +1,134 @@
+<div class="table-container">
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Employee</th>
+        <th>Department</th>
+        <th>Basic Salary</th>
+        <th>Leave Deduction</th>
+        <th>Net Salary</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      @for (employee of employees; track employee.employeeId) {
+
+        <tr>
+
+          <td>
+
+            <div class="employee">
+
+              <div class="avatar">
+                {{ employee.name.charAt(0) }}
+              </div>
+
+              <div>
+                <strong>{{ employee.name }}</strong>
+                <span>EMP{{ employee.employeeId }}</span>
+              </div>
+
+            </div>
+
+          </td>
+
+
+          <td>
+            {{ employee.department }}
+          </td>
+
+
+          <td>
+            ₹{{ employee.payroll.basicSalary | number }}
+          </td>
+
+
+          <td>
+            ₹{{ employee.payroll.deductions.leaveDeduction | number }}
+          </td>
+
+
+          <td class="net-salary">
+            ₹{{ employee.payroll.netSalary | number }}
+          </td>
+
+
+          <td>
+
+            <span
+              class="status"
+              [class.paid]="employee.payroll.status === 'Paid'"
+              [class.pending]="employee.payroll.status === 'Pending'"
+              [class.rejected]="employee.payroll.status === 'Rejected'">
+
+              {{ employee.payroll.status }}
+
+            </span>
+
+          </td>
+
+
+          <td>
+
+            <div class="actions">
+
+              <button
+                class="payslip-btn"
+                title="View Payslip"
+                (click)="viewPayslip(employee)">
+
+                <mat-icon>receipt_long</mat-icon>
+
+              </button>
+
+
+              @if (employee.payroll.status === 'Pending') {
+
+                <button
+                  class="process-btn"
+                  title="Process Payroll"
+                  (click)="process(employee)">
+
+                  <mat-icon>check</mat-icon>
+
+                </button>
+
+
+                <button
+                  class="reject-btn"
+                  title="Reject Payroll"
+                  (click)="reject(employee)">
+
+                  <mat-icon>close</mat-icon>
+
+                </button>
+
+              }
+
+            </div>
+
+          </td>
+
+        </tr>
+
+      }
+
+    </tbody>
+
+  </table>
+
+
+  @if (employees.length === 0) {
+
+    <div class="empty">
+      No payroll records found
+    </div>
+
+  }
+
+</div>

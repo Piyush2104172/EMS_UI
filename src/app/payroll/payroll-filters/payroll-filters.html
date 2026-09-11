@@ -1,0 +1,106 @@
+<div class="filter-container">
+
+  <div class="filter-field">
+    <label>Employee</label>
+
+    <div class="search-box">
+      <mat-icon>search</mat-icon>
+
+      <input
+        type="text"
+        [ngModel]="searchText"
+        (ngModelChange)="searchTextChange.emit($event)"
+        placeholder="Search employee...">
+    </div>
+  </div>
+
+
+  <div class="filter-field">
+    <label>Department</label>
+
+    <select
+      [ngModel]="selectedDepartment"
+      (ngModelChange)="departmentChange.emit($event)">
+
+      <option value="">All Departments</option>
+
+      @for (department of departments; track department) {
+        <option [value]="department">
+          {{ department }}
+        </option>
+      }
+
+    </select>
+  </div>
+
+
+  <div class="filter-field">
+    <label>Month</label>
+
+    <select
+      [ngModel]="selectedMonth"
+      (ngModelChange)="monthChange.emit($event)">
+
+      <option value="">All Months</option>
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+
+    </select>
+  </div>
+
+
+  <div class="filter-field">
+    <label>Year</label>
+
+    <select
+      [ngModel]="selectedYear"
+      (ngModelChange)="yearChange.emit($event)">
+
+      <option value="">All Years</option>
+
+      @for (year of years; track year) {
+        <option [value]="year">
+          {{ year }}
+        </option>
+      }
+
+    </select>
+  </div>
+
+
+  <div class="filter-field">
+    <label>Status</label>
+
+    <select
+      [ngModel]="selectedStatus"
+      (ngModelChange)="statusChange.emit($event)">
+
+      <option value="">All Status</option>
+      <option value="Paid">Paid</option>
+      <option value="Pending">Pending</option>
+      <option value="Rejected">Rejected</option>
+
+    </select>
+  </div>
+
+
+  <button
+    class="reset-btn"
+    (click)="reset.emit()">
+
+    <mat-icon>refresh</mat-icon>
+    Reset
+
+  </button>
+
+</div>

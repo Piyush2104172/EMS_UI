@@ -1,0 +1,31 @@
+<div class="summary">
+
+  @for (card of cards; track card.title) {
+
+    <div class="summary-card">
+
+      <div class="summary-icon" [ngClass]="card.type">
+        <mat-icon>{{ card.icon }}</mat-icon>
+      </div>
+
+      <div class="summary-content">
+
+        <span>{{ card.title }}</span>
+
+        <strong>
+          @if (card.money) {
+            ₹{{ card.value | number }}
+          } @else {
+            {{ card.value }}
+          }
+        </strong>
+
+        <small>{{ card.text }}</small>
+
+      </div>
+
+    </div>
+
+  }
+
+</div>

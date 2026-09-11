@@ -1,0 +1,179 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+
+  background: white;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f7f9fc;
+}
+
+th {
+  padding: 13px 15px;
+
+  text-align: left;
+
+  font-size: 11px;
+  font-weight: 600;
+  color: #667085;
+
+  border-bottom: 1px solid #e5eaf0;
+}
+
+td {
+  padding: 14px 15px;
+
+  font-size: 12px;
+  color: #475467;
+
+  border-bottom: 1px solid #eef1f5;
+}
+
+tbody tr:hover {
+  background: #fafcff;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.employee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #eaf2ff;
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.employee strong {
+  display: block;
+
+  font-size: 12px;
+  color: #172033;
+}
+
+.employee span {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 10px;
+  color: #98a2b3;
+}
+
+.net-salary {
+  font-weight: 600;
+  color: #172033;
+}
+
+.status {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.status.paid {
+  background: #e8f8ef;
+  color: #159957;
+}
+
+.status.pending {
+  background: #fff7df;
+  color: #c58a00;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.actions button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #d9dee7;
+  border-radius: 5px;
+
+  background: white;
+
+  cursor: pointer;
+}
+
+.actions mat-icon {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+
+.view-btn {
+  color: #2563eb;
+}
+
+.payslip-btn {
+  color: #7c3aed;
+}
+
+.reject-btn {
+  color: #dc3545;
+}
+
+.reject-btn:hover {
+  background: #ffeded;
+}
+.process-btn {
+  color: #159957;
+}
+
+.actions button:hover {
+  background: #f5f8fc;
+}
+
+.empty {
+  padding: 35px;
+  text-align: center;
+
+  font-size: 12px;
+  color: #98a2b3;
+}

@@ -1,0 +1,218 @@
+<div class="payslip-page">
+
+  @if (employee) {
+
+  <div class="payslip-card">
+
+    <div class="header">
+
+      <div>
+        <h1>WorkSphere</h1>
+        <p>Employee Payslip</p>
+      </div>
+
+      <div class="header-right">
+
+        <div class="status" [class.paid]="employee.payroll.status === 'Paid'"
+          [class.pending]="employee.payroll.status === 'Pending'">
+
+          {{ employee.payroll.status }}
+
+        </div>
+
+        <button class="close-btn" (click)="closePayslip()">
+
+          <mat-icon>close</mat-icon>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Employee -->
+
+    <div class="employee">
+
+      <div class="avatar">
+        {{ employee.name.charAt(0) }}
+      </div>
+
+      <div class="employee-info">
+
+        <h2>
+          {{ employee.name }}
+        </h2>
+
+        <p>
+          EMP{{ employee.employeeId }}
+          ·
+          {{ employee.department }}
+        </p>
+
+        <span>
+          {{ employee.designation }}
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- Payroll Information -->
+
+    <div class="payroll-info">
+
+      <div>
+        <span>Payroll Month</span>
+
+        <strong>
+          {{ employee.payroll.month }}
+          {{ employee.payroll.year }}
+        </strong>
+      </div>
+
+      <div>
+        <span>Payment Date</span>
+
+        <strong>
+          {{ employee.payroll.paymentDate || 'Pending' }}
+        </strong>
+      </div>
+
+    </div>
+
+
+    <!-- Salary + Deduction -->
+
+    <div class="salary-grid">
+
+      <div class="salary-box">
+
+        <h3>Earnings</h3>
+
+        <div class="row">
+          <span>Basic Salary</span>
+
+          <strong>
+            ₹{{ employee.payroll.basicSalary | number }}
+          </strong>
+        </div>
+
+        <div class="row">
+          <span>HRA</span>
+
+          <strong>
+            ₹{{ employee.payroll.hra | number }}
+          </strong>
+        </div>
+
+        <div class="row">
+          <span>Allowances</span>
+
+          <strong>
+            ₹{{ employee.payroll.allowances | number }}
+          </strong>
+        </div>
+
+        <div class="row total">
+          <span>Gross Salary</span>
+
+          <strong>
+            ₹{{ employee.payroll.grossSalary | number }}
+          </strong>
+        </div>
+
+      </div>
+
+
+      <div class="salary-box">
+
+        <h3>Deductions</h3>
+
+        <div class="row">
+          <span>PF</span>
+
+          <strong>
+            ₹{{ employee.payroll.deductions.pf | number }}
+          </strong>
+        </div>
+
+        <div class="row">
+          <span>TDS</span>
+
+          <strong>
+            ₹{{ employee.payroll.deductions.tds | number }}
+          </strong>
+        </div>
+
+        <div class="row">
+          <span>Other Deductions</span>
+
+          <strong>
+            ₹{{ employee.payroll.deductions.otherDeductions | number }}
+          </strong>
+        </div>
+
+        <div class="row leave">
+          <span>Leave Deduction</span>
+
+          <strong>
+            ₹{{ employee.payroll.deductions.leaveDeduction | number }}
+          </strong>
+        </div>
+
+        <div class="row total">
+          <span>Total Deductions</span>
+
+          <strong>
+            ₹{{ employee.payroll.totalDeductions | number }}
+          </strong>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Net Salary -->
+
+    <div class="net-salary">
+
+      <span>
+        Net Salary Payable
+      </span>
+
+      <strong>
+        ₹{{ employee.payroll.netSalary | number }}
+      </strong>
+
+    </div>
+
+
+    <!-- Actions -->
+
+    <div class="actions">
+
+      <button class="print-btn" (click)="printPayslip()">
+
+        <mat-icon>print</mat-icon>
+        Print
+
+      </button>
+
+      <button class="download-btn" (click)="downloadPayslip()">
+
+        <mat-icon>download</mat-icon>
+        Download
+
+      </button>
+
+    </div>
+
+  </div>
+
+  }
+
+</div>
