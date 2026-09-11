@@ -1,0 +1,51 @@
+<div class="summary">
+
+  <div class="summary-card">
+    <div class="summary-icon total">
+      <mat-icon>description</mat-icon>
+    </div>
+
+    <div>
+      <span>Total Requests</span>
+      <strong>{{ total }}</strong>
+      <small>All leave applications</small>
+    </div>
+  </div>
+
+  <div class="summary-card">
+    <div class="summary-icon pending">
+      <mat-icon>schedule</mat-icon>
+    </div>
+
+    <div>
+      <span>Pending</span>
+      <strong>{{ pending }}</strong>
+      <small>Awaiting approval</small>
+    </div>
+  </div>
+
+  <div class="summary-card">
+    <div class="summary-icon approved">
+      <mat-icon>check_circle</mat-icon>
+    </div>
+
+    <div>
+      <span>Approved</span>
+      <strong>{{ approved }}</strong>
+      <small>This month</small>
+    </div>
+  </div>
+
+  <div class="summary-card">
+    <div class="summary-icon rejected">
+      <mat-icon>cancel</mat-icon>
+    </div>
+
+    <div>
+      <span>Rejected</span>
+      <strong>{{ rejected }}</strong>
+      <small>This month</small>
+    </div>
+  </div>
+
+</div>

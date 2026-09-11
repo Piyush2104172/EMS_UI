@@ -1,0 +1,150 @@
+.leave-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.5fr 0.7fr 1fr 1.5fr;
+  align-items: center;
+  gap: 14px;
+
+  padding: 12px 16px;
+
+  background: white;
+  border: 1px solid #e5eaf0;
+  border-radius: 8px;
+}
+
+.list-employee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf2ff;
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.list-employee h3 {
+  margin: 0;
+  font-size: 13px;
+  color: #172033;
+}
+
+.list-employee p {
+  margin: 3px 0 0;
+  font-size: 10px;
+  color: #667085;
+}
+
+.leave-type,
+.status {
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.leave-type.sick {
+  background: #fff0f0;
+  color: #dc3545;
+}
+
+.leave-type.casual {
+  background: #eef6ff;
+  color: #2563eb;
+}
+
+.leave-type.annual {
+  background: #f3edff;
+  color: #7c3aed;
+}
+
+.leave-type.maternity {
+  background: #fff0f7;
+  color: #db2777;
+}
+
+.list-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 11px;
+  color: #667085;
+}
+
+.list-date mat-icon {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+}
+
+.list-days {
+  font-size: 11px;
+  color: #475467;
+}
+
+.status.pending {
+  background: #fff7df;
+  color: #c58a00;
+}
+
+.status.approved {
+  background: #e8f8ef;
+  color: #159957;
+}
+
+.status.rejected {
+  background: #ffeded;
+  color: #dc3545;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.approve-btn,
+.reject-btn {
+  width: 65px;
+  height: 28px;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background: #e8f8ef;
+  color: #159957;
+}
+
+.reject-btn {
+  background: #ffeded;
+  color: #dc3545;
+}
+
+.no-action {
+  text-align: center;
+  color: #98a2b3;
+}

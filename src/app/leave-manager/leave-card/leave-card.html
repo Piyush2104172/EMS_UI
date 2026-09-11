@@ -1,0 +1,86 @@
+<div class="leave-card">
+
+  <div class="employee-header">
+
+    <div class="avatar">
+      {{ leave.employee.charAt(0) }}
+    </div>
+
+    <div>
+      <h3>{{ leave.employee }}</h3>
+      <p>EMP{{ leave.employeeId }} | {{ leave.department }}</p>
+    </div>
+
+  </div>
+
+  <div class="badges">
+
+    <span class="leave-type" [class.sick]="leave.leaveType === 'Sick Leave'"
+      [class.casual]="leave.leaveType === 'Casual Leave'" [class.annual]="leave.leaveType === 'Annual Leave'"
+      [class.maternity]="leave.leaveType === 'Maternity Leave'">
+      {{ leave.leaveType }}
+    </span>
+
+    <span class="status" [class.pending]="leave.status === 'Pending'" [class.approved]="leave.status === 'Approved'"
+      [class.rejected]="leave.status === 'Rejected'">
+      {{ leave.status }}
+    </span>
+
+  </div>
+
+  <div class="leave-info">
+
+    <div>
+      <mat-icon>calendar_today</mat-icon>
+      <span>{{ leave.fromDate }} - {{ leave.toDate }}</span>
+    </div>
+
+    <div>
+      <mat-icon>schedule</mat-icon>
+      <span>
+        {{ leave.days }} Day{{ leave.days > 1 ? 's' : '' }}
+      </span>
+    </div>
+
+    <div>
+      <mat-icon>send</mat-icon>
+      <span>Applied on {{ leave.appliedOn }}</span>
+    </div>
+
+  </div>
+
+  @if (leave.status === 'Pending') {
+
+  <div class="actions">
+
+    <button class="approve-btn" (click)="approveLeave()">
+      Approve
+    </button>
+
+    <button class="reject-btn" (click)="rejectLeave()">
+      Reject
+    </button>
+
+  </div>
+
+  }
+
+  @if (leave.status === 'Approved') {
+
+  <div class="final-status approved-box">
+    <mat-icon>check</mat-icon>
+    Approved
+  </div>
+
+  }
+
+  @if (leave.status === 'Rejected') {
+
+  <div class="final-status rejected-box">
+    <mat-icon>close</mat-icon>
+    Rejected
+  </div>
+
+  }
+
+</div>

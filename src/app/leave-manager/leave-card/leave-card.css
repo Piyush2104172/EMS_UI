@@ -1,0 +1,161 @@
+.leave-card {
+  background: white;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.employee-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #eaf2ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.employee-header h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #172033;
+}
+
+.employee-header p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: #667085;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.leave-type,
+.status {
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.leave-type.sick {
+  background: #fff0f0;
+  color: #dc3545;
+}
+
+.leave-type.casual {
+  background: #eef6ff;
+  color: #2563eb;
+}
+
+.leave-type.annual {
+  background: #f3edff;
+  color: #7c3aed;
+}
+
+.leave-type.maternity {
+  background: #fff0f7;
+  color: #db2777;
+}
+
+.status.pending {
+  background: #fff7df;
+  color: #c58a00;
+}
+
+.status.approved {
+  background: #e8f8ef;
+  color: #159957;
+}
+
+.status.rejected {
+  background: #ffeded;
+  color: #dc3545;
+}
+
+.leave-info {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 12px 0;
+  border-top: 1px solid #eef1f5;
+}
+
+.leave-info div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #667085;
+}
+
+.leave-info mat-icon {
+  font-size: 17px;
+  width: 17px;
+  height: 17px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.approve-btn,
+.reject-btn {
+  flex: 1;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.approve-btn {
+  background: #e8f8ef;
+  color: #159957;
+}
+
+.reject-btn {
+  background: #ffeded;
+  color: #dc3545;
+}
+
+.final-status {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.final-status mat-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.approved-box {
+  background: #e8f8ef;
+  color: #159957;
+}
+
+.rejected-box {
+  background: #ffeded;
+  color: #dc3545;
+}

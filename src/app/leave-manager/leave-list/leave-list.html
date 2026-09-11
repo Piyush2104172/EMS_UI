@@ -1,0 +1,78 @@
+<div class="leave-list">
+
+  @for (leave of requests; track leave.employeeId) {
+
+  <div class="list-item">
+
+    <div class="list-employee">
+
+      <div class="avatar">
+        {{ leave.employee.charAt(0) }}
+      </div>
+
+      <div>
+        <h3>{{ leave.employee }}</h3>
+        <p>EMP{{ leave.employeeId }} | {{ leave.department }}</p>
+      </div>
+
+    </div>
+
+
+    <span class="leave-type" [class.sick]="leave.leaveType === 'Sick Leave'"
+      [class.casual]="leave.leaveType === 'Casual Leave'" [class.annual]="leave.leaveType === 'Annual Leave'"
+      [class.maternity]="leave.leaveType === 'Maternity Leave'">
+
+      {{ leave.leaveType }}
+
+    </span>
+
+
+    <div class="list-date">
+
+      <span>{{ leave.fromDate }}</span>
+
+      <mat-icon>arrow_forward</mat-icon>
+
+      <span>{{ leave.toDate }}</span>
+
+    </div>
+
+
+    <span class="list-days">
+      {{ leave.days }} Day{{ leave.days > 1 ? 's' : '' }}
+    </span>
+
+
+    <span class="status" [class.pending]="leave.status === 'Pending'" [class.approved]="leave.status === 'Approved'"
+      [class.rejected]="leave.status === 'Rejected'">
+
+      {{ leave.status }}
+
+    </span>
+
+
+    @if (leave.status === 'Pending') {
+
+    <div class="actions">
+
+      <button class="approve-btn" (click)="approveLeave(leave)">
+        Approve
+      </button>
+
+      <button class="reject-btn" (click)="rejectLeave(leave)">
+        Reject
+      </button>
+
+    </div>
+
+    } @else {
+
+    <span class="no-action">-</span>
+
+    }
+
+  </div>
+
+  }
+
+</div>

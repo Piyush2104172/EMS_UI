@@ -1,0 +1,67 @@
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+}
+
+.summary-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+}
+
+.summary-icon.total {
+  background: #eaf2ff;
+  color: #2563eb;
+}
+
+.summary-icon.pending {
+  background: #fff7df;
+  color: #d89b00;
+}
+
+.summary-icon.approved {
+  background: #e8f8ef;
+  color: #16a05d;
+}
+
+.summary-icon.rejected {
+  background: #ffeded;
+  color: #dc3545;
+}
+
+.summary-card span,
+.summary-card small {
+  display: block;
+}
+
+.summary-card span {
+  font-size: 13px;
+  color: #667085;
+}
+
+.summary-card strong {
+  display: block;
+  margin: 3px 0;
+  font-size: 24px;
+  color: #172033;
+}
+
+.summary-card small {
+  font-size: 11px;
+  color: #98a2b3;
+}

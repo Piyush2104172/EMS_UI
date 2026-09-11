@@ -1,1 +1,143 @@
-<p>leave-manager works!</p>
+<div class="leave-page">
+
+  <div class="page-header">
+    <div>
+      <h1>Leave Management</h1>
+      <p>Manage and review employee leave requests</p>
+    </div>
+  </div>
+
+
+  <app-leave-summary [total]="totalRequests" [pending]="pendingRequests" [approved]="approvedRequests"
+    [rejected]="rejectedRequests">
+  </app-leave-summary>
+
+
+  <app-leave-filters [leaveTypes]="leaveTypes" [searchText]="searchText" [selectedLeaveType]="selectedLeaveType"
+    [selectedStatus]="selectedStatus" [fromDate]="fromDate" [toDate]="toDate"
+    (searchTextChange)="searchText = $event; currentPage = 1"
+    (leaveTypeChange)="selectedLeaveType = $event; currentPage = 1"
+    (statusChange)="selectedStatus = $event; currentPage = 1" (fromDateChange)="fromDate = $event; currentPage = 1"
+    (toDateChange)="toDate = $event; currentPage = 1" (reset)="resetFilters()">
+  </app-leave-filters>
+
+
+  <div class="request-header">
+
+    <div class="request-title">
+      <h2>Leave Requests</h2>
+      <span>{{ filteredRequests.length }} requests</span>
+    </div>
+
+
+    <div class="view-controls">
+
+      <label>Sort by:</label>
+
+      <select [(ngModel)]="sortBy" (ngModelChange)="currentPage = 1">
+
+        <option value="newest">
+          Newest First
+        </option>
+
+        <option value="oldest">
+          Oldest First
+        </option>
+
+      </select>
+
+
+      <button [class.active]="viewMode === 'grid'" (click)="changeView('grid')">
+
+        <mat-icon>grid_view</mat-icon>
+
+      </button>
+
+
+      <button [class.active]="viewMode === 'list'" (click)="changeView('list')">
+
+        <mat-icon>view_list</mat-icon>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  @if (viewMode === 'grid') {
+
+  <div class="leave-grid">
+
+    @for (leave of paginatedRequests; track leave.employeeId) {
+
+    <app-leave-card [leave]="leave" (approve)="approveLeave($event)" (reject)="rejectLeave($event)">
+    </app-leave-card>
+
+    }
+
+  </div>
+
+  }
+
+
+  @if (viewMode === 'list') {
+
+  <app-leave-list [requests]="paginatedRequests" (approve)="approveLeave($event)" (reject)="rejectLeave($event)">
+  </app-leave-list>
+
+  }
+
+
+  <div class="pagination">
+
+    @if (filteredRequests.length > 0) {
+
+    <span>
+      Showing
+      {{ (currentPage - 1) * pageSize + 1 }}
+      -
+      {{ Math.min(currentPage * pageSize, filteredRequests.length) }}
+      of
+      {{ filteredRequests.length }}
+      requests
+    </span>
+
+    } @else {
+
+    <span>No requests found</span>
+
+    }
+
+
+    @if (totalPages > 1) {
+
+    <div class="page-buttons">
+
+      <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">
+        ‹
+      </button>
+
+
+      @for (page of [].constructor(totalPages); track $index) {
+
+      <button [class.active]="currentPage === $index + 1" (click)="changePage($index + 1)">
+
+        {{ $index + 1 }}
+
+      </button>
+
+      }
+
+
+      <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">
+        ›
+      </button>
+
+    </div>
+
+    }
+
+  </div>
+
+</div>

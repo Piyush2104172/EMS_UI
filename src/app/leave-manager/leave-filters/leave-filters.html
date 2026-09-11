@@ -1,0 +1,66 @@
+<div class="filter-container">
+
+  <div class="filter-field">
+    <label>Employee</label>
+
+    <div class="search-box">
+      <mat-icon>search</mat-icon>
+
+      <input type="text" [ngModel]="searchText" (ngModelChange)="searchTextChange.emit($event)"
+        placeholder="Search employee...">
+    </div>
+  </div>
+
+
+  <div class="filter-field">
+    <label>Leave Type</label>
+
+    <select [ngModel]="selectedLeaveType" (ngModelChange)="leaveTypeChange.emit($event)">
+
+      <option value="">All Leave Types</option>
+
+      @for (type of leaveTypes; track type) {
+      <option [value]="type">
+        {{ type }}
+      </option>
+      }
+
+    </select>
+  </div>
+
+
+  <div class="filter-field">
+    <label>Status</label>
+
+    <select [ngModel]="selectedStatus" (ngModelChange)="statusChange.emit($event)">
+
+      <option value="">All Status</option>
+      <option value="Pending">Pending</option>
+      <option value="Approved">Approved</option>
+      <option value="Rejected">Rejected</option>
+
+    </select>
+  </div>
+
+
+  <div class="filter-field">
+    <label>Date Range</label>
+
+    <div class="date-range">
+
+      <input type="date" [ngModel]="fromDate" (ngModelChange)="fromDateChange.emit($event)">
+
+      <span>to</span>
+
+      <input type="date" [ngModel]="toDate" (ngModelChange)="toDateChange.emit($event)">
+
+    </div>
+  </div>
+
+
+  <button class="reset-btn" (click)="reset.emit()">
+    <mat-icon>refresh</mat-icon>
+    Reset
+  </button>
+
+</div>
